@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "eyebrow": "A PLACE TO SLOW DOWN",
+    "title_line1": "MAKE",
+    "title_line2": "ROOM.",
+    "lead": "A place to slow down, make room, and encounter God's presence."
+  },
+  "heart": {
+    "heading": "LIFE IS LOUD."
+  },
+  "event": {
+    "date": "COMING SOON",
+    "location": "GREATER MONCTON, NB",
+    "admission": "DETAILS COMING SOON",
+    "button_text": "KEEP ME UPDATED",
+    "button_url": "#connect"
+  },
+  "connect": {
+    "intro": "Be the first to know about upcoming MAKOM gatherings and updates."
+  },
+  "social": {
+    "instagram": "@makomlive",
+    "youtube": "@makomlive",
+    "email": "info@makomworship.com"
+  }
+}

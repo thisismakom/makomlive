@@ -1,0 +1,52 @@
+# Replace YOUR_GITHUB_USERNAME/makomlive with your real repository after creating it.
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/makomlive
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "website"
+    label: "Website"
+    files:
+      - name: "homepage"
+        label: "Homepage & Gathering Details"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Headline line 1", name: "title_line1", widget: "string" }
+              - { label: "Headline line 2", name: "title_line2", widget: "string" }
+              - { label: "Intro", name: "lead", widget: "text" }
+          - label: "The Heart"
+            name: "heart"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Next Gathering"
+            name: "event"
+            widget: "object"
+            fields:
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Admission", name: "admission", widget: "string" }
+              - { label: "Button text", name: "button_text", widget: "string" }
+              - { label: "Button link", name: "button_url", widget: "string" }
+          - label: "Stay Connected"
+            name: "connect"
+            widget: "object"
+            fields:
+              - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Contact & Social"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Instagram", name: "instagram", widget: "string" }
+              - { label: "YouTube", name: "youtube", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
