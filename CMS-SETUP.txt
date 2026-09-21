@@ -1,0 +1,18 @@
+MAKOM CMS-READY WEBSITE
+
+This version separates frequently changed website content into content/site.json and includes a visual admin screen at /admin/ powered by Decap CMS.
+
+IMPORTANT: For the admin screen to SAVE changes, the site must be connected to a Git repository. Your current manual Netlify Drop deployment does not provide a writable content repository.
+
+Recommended setup:
+1. Create a free GitHub account/repository named makomlive (if you do not already have one).
+2. Upload this entire folder to that repository.
+3. In admin/config.yml replace YOUR_GITHUB_USERNAME/makomlive with your actual GitHub username/repository.
+4. In Netlify, connect the existing MAKOM project to that GitHub repository (or import the repository as the site's deployment source).
+5. Configure GitHub authentication for Decap CMS. The CMS then lives at https://YOUR-SITE/admin/.
+6. Edit fields in /admin/, press Publish, and Netlify redeploys the site automatically.
+
+Until authentication is configured, you can still edit content/site.json manually and redeploy the folder.
+
+Design files remain separate and protected: index.html, styles.css, assets, script.js.
+Routine editable content: content/site.json.
