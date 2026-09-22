@@ -542,3 +542,157 @@
   }
 
 }
+
+
+/* =========================================
+   04 / NEXT MAKOM
+   ========================================= */
+
+.next {
+  padding: 140px 6vw;
+  background: #050505;
+  color: #fff;
+}
+
+.next-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.next-top {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+  align-items: end;
+  margin-top: 70px;
+}
+
+.next-top .eyebrow {
+  grid-column: 1 / -1;
+  margin: 0 0 -40px;
+}
+
+.next-top h2 {
+  margin: 0;
+  font-size: clamp(78px, 10vw, 150px);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.next-top h2 em {
+  color: #df001b;
+  font-style: normal;
+}
+
+.next-lead {
+  max-width: 560px;
+  margin: 65px 0 70px auto;
+  font-size: clamp(20px, 1.8vw, 28px);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.event {
+  max-width: 850px;
+  margin-left: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.event > div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.event small {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.event strong {
+  font-size: clamp(18px, 1.6vw, 24px);
+  font-weight: 500;
+}
+
+.next-bottom {
+  max-width: 850px;
+  margin: 60px 0 0 auto;
+}
+
+.next-bottom p {
+  margin: 0 0 32px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.next-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #df001b;
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.next-cta span {
+  color: #df001b;
+  transition: transform 0.25s ease;
+}
+
+.next-cta:hover span {
+  transform: translateX(6px);
+}
+
+
+/* 04 / NEXT MAKOM — MOBILE */
+
+@media (max-width: 768px) {
+
+  .next {
+    padding: 100px 24px;
+  }
+
+  .next-top {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 55px;
+  }
+
+  .next-top .eyebrow {
+    grid-column: auto;
+    margin: 0;
+  }
+
+  .next-top h2 {
+    font-size: clamp(64px, 20vw, 95px);
+  }
+
+  .next-lead {
+    margin: 50px 0;
+    font-size: 20px;
+  }
+
+  .event {
+    margin-left: 0;
+  }
+
+  .event > div {
+    grid-template-columns: 1fr;
+    gap: 9px;
+    padding: 24px 0;
+  }
+
+  .next-bottom {
+    margin: 45px 0 0;
+  }
+
+}
