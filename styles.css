@@ -1459,3 +1459,30 @@ footer hr {
     max-width: 100% !important;
   }
 }
+
+
+/* MAKOM FOOTER LOGO — FINAL SIZE */
+
+footer img {
+  width: 250px !important;
+  max-width: 250px !important;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  footer img {
+    width: 250px !important;
+    max-width: 250px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  footer img {
+    width: 210px !important;
+    max-width: 90% !important;
+  }
+}
