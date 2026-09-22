@@ -1466,8 +1466,8 @@ footer hr {
    ========================================= */
 
 footer img {
-  width: 360px !important;
-  max-width: 360px !important;
+  width: 460px !important;
+  max-width: 460px !important;
   height: auto !important;
   object-fit: contain;
   display: block;
@@ -1476,7 +1476,7 @@ footer img {
 /* Mobile */
 @media (max-width: 768px) {
   footer img {
-    width: 260px !important;
+    width: 460px !important;
     max-width: 90% !important;
   }
 }
