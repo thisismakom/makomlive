@@ -1354,3 +1354,31 @@
     gap: 14px;
   }
 }
+
+
+/* =========================================
+   MAKOM FOOTER — LOGO SIZE FIX
+   ========================================= */
+
+footer img {
+  width: 320px !important;
+  max-width: 320px !important;
+  height: auto !important;
+}
+
+/* Give the logo proper presence in the footer */
+footer {
+  padding: 80px 7% 35px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  footer img {
+    width: 220px !important;
+    max-width: 220px !important;
+  }
+
+  footer {
+    padding: 60px 24px 30px;
+  }
+}
