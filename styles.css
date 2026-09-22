@@ -1480,3 +1480,52 @@ footer img {
     max-width: 90% !important;
   }
 }
+
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-brand .footer-logo {
+  width: 210px !important;
+  max-width: 210px !important;
+  height: auto !important;
+}
+
+.footer-brand-line {
+  width: 2px;
+  height: 48px;
+  background: #df001b;
+  flex-shrink: 0;
+}
+
+.footer-brand-text {
+  margin: 0;
+  color: rgba(255,255,255,0.72);
+  font-size: 13px;
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .footer-brand {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .footer-brand .footer-logo {
+    width: 150px !important;
+  }
+
+  .footer-brand-line {
+    height: 40px;
+  }
+
+  .footer-brand-text {
+    font-size: 10px;
+    white-space: normal;
+  }
+}
