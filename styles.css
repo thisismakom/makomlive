@@ -1810,3 +1810,22 @@ footer img {
   font-weight: 500 !important;
   letter-spacing: 0.10em !important;
 }
+
+
+.footer-pillars {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-pillars span {
+  color: #8f949d !important;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.footer-pillars b {
+  color: #e60018 !important;
+  font-size: 11px;
+}
