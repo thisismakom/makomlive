@@ -137,3 +137,32 @@
     line-height: 1.65;
   }
 }
+
+/* MAKOM — HERO FINAL REFINEMENT */
+
+.hero::before {
+  width: min(58vw, 820px);
+  border-color: rgba(255, 255, 255, 0.055);
+}
+
+.hero-title {
+  font-size: clamp(78px, 8.5vw, 145px);
+  line-height: 0.82;
+}
+
+.hero-title span + span {
+  margin-top: 0.18em;
+}
+
+.hero-bottom {
+  margin-top: 42px;
+}
+
+.hero .lead {
+  font-size: clamp(15px, 1.1vw, 18px);
+  color: rgba(244, 242, 237, 0.78);
+}
+
+.hero-cta {
+  margin-top: 26px;
+}
