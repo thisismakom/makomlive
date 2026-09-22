@@ -1,4 +1,3 @@
-# Replace YOUR_GITHUB_USERNAME/makomlive with your real repository after creating it.
 backend:
   name: git-gateway
   branch: main
