@@ -1829,3 +1829,182 @@ footer img {
   color: #e60018 !important;
   font-size: 11px;
 }
+
+
+/* =========================================
+   MAKOM FOOTER — FINAL COMPACT VERSION
+========================================= */
+
+.makom-footer {
+  background: #050505 !important;
+  color: #fff;
+  padding: 55px 7% 30px !important;
+  min-height: auto !important;
+}
+
+/* TOP ROW */
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 55px;
+}
+
+/* BRAND AREA */
+.footer-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 38px !important;
+}
+
+/* LOGO */
+.makom-footer .footer-logo {
+  width: 250px !important;
+  max-width: 250px !important;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+}
+
+/* BRAND SENTENCE */
+.footer-message {
+  margin: 0 !important;
+  color: #a5a8ae !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em !important;
+}
+
+.footer-message span {
+  color: #e60018;
+}
+
+/* NAVIGATION */
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  transition: opacity 0.2s ease;
+}
+
+.footer-nav a:hover {
+  opacity: 0.6;
+}
+
+/* BOTTOM ROW — NO DIVIDER LINE */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 0 !important;
+  border-top: 0 !important;
+
+  padding-top: 0 !important;
+}
+
+/* WORSHIP • PRAYER • STILLNESS */
+.footer-pillars {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-pillars span {
+  color: #8f949d;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.footer-pillars b {
+  color: #e60018;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* COPYRIGHT */
+.footer-copyright {
+  margin: 0;
+  color: #777d87;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+
+/* =========================================
+   REMOVE OLD FOOTER LINES / DIVIDERS
+========================================= */
+
+.makom-footer::before,
+.makom-footer::after,
+.footer-main::before,
+.footer-main::after,
+.footer-bottom::before,
+.footer-bottom::after {
+  display: none !important;
+  content: none !important;
+}
+
+.makom-footer,
+.footer-main,
+.footer-bottom {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .makom-footer {
+    padding: 45px 25px 28px !important;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+    margin-bottom: 42px;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 18px !important;
+  }
+
+  .makom-footer .footer-logo {
+    width: 200px !important;
+    max-width: 200px !important;
+  }
+
+  .footer-message {
+    font-size: 12px !important;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 18px 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+}
