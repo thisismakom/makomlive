@@ -166,3 +166,16 @@
 .hero-cta {
   margin-top: 26px;
 }
+/* MAKOM HEADER LOGO REFINEMENT */
+
+.nav > a:first-child img {
+  width: 130px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav > a:first-child img {
+    width: 105px;
+  }
+}
