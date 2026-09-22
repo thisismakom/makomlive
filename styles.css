@@ -1464,8 +1464,8 @@ footer hr {
 /* MAKOM FOOTER LOGO — FINAL SIZE */
 
 footer img {
-  width: 250px !important;
-  max-width: 250px !important;
+  width: 320px !important;
+  max-width: 320px !important;
   height: auto !important;
   object-fit: contain;
   display: block;
