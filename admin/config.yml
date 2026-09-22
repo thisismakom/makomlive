@@ -1,7 +1,6 @@
 # Replace YOUR_GITHUB_USERNAME/makomlive with your real repository after creating it.
 backend:
-  name: github
-  repo: YOUR_GITHUB_USERNAME/makomlive
+  name: git-gateway
   branch: main
 
 media_folder: "assets/uploads"
