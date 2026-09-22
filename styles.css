@@ -614,8 +614,10 @@
 }
 
 .event strong {
-  font-size: clamp(18px, 1.6vw, 24px);
+  font-size: clamp(17px, 1.35vw, 22px);
   font-weight: 500;
+  line-height: 1.2;
+}
 }
 
 .next-bottom {
