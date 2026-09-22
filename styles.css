@@ -299,3 +299,119 @@
   }
 
 }
+/* =========================================
+   02 / THE GATHERING
+   ========================================= */
+
+.pillars {
+  padding: 130px 6vw;
+  background: #050505;
+  color: #f4f2ed;
+}
+
+.pillars-header {
+  max-width: 850px;
+  margin-bottom: 80px;
+}
+
+.pillars-header .section-label {
+  margin-bottom: 35px;
+}
+
+.pillars-header h2 {
+  margin: 0 0 30px;
+  font-size: clamp(58px, 7vw, 110px);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+}
+
+.pillars-header h2 em {
+  color: #e0001b;
+  font-style: normal;
+}
+
+.pillars-header > p {
+  max-width: 650px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(244, 242, 237, 0.72);
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pillar-grid article {
+  min-height: 350px;
+  padding: 45px 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pillar-grid article:last-child {
+  border-right: 0;
+}
+
+.pillar-grid article > span {
+  display: block;
+  margin-bottom: 80px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #e0001b;
+}
+
+.pillar-grid h3 {
+  margin: 0 0 25px;
+  font-size: clamp(27px, 2.4vw, 40px);
+  letter-spacing: -0.03em;
+}
+
+.pillar-grid p {
+  max-width: 330px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: rgba(244, 242, 237, 0.7);
+}
+
+/* THE GATHERING — MOBILE */
+
+@media (max-width: 768px) {
+
+  .pillars {
+    padding: 100px 24px;
+  }
+
+  .pillars-header {
+    margin-bottom: 55px;
+  }
+
+  .pillars-header h2 {
+    font-size: clamp(52px, 17vw, 76px);
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pillar-grid article {
+    min-height: auto;
+    padding: 38px 0 45px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .pillar-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .pillar-grid article > span {
+    margin-bottom: 40px;
+  }
+
+}
