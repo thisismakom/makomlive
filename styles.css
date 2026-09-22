@@ -1529,3 +1529,268 @@ footer img {
     white-space: normal;
   }
 }
+
+
+/* =====================================================
+   MAKOM FOOTER
+===================================================== */
+
+.site-footer {
+  background: #050505;
+  color: #fff;
+  width: 100%;
+  padding: 95px 0 45px;
+}
+
+.footer-inner {
+  width: min(1600px, 88%);
+  margin: 0 auto;
+}
+
+
+/* TOP ROW */
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  min-height: 190px;
+}
+
+
+/* BRAND AREA */
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-shrink: 0;
+}
+
+
+/* MAKOM WORDMARK */
+
+.footer-logo {
+  display: block;
+
+  /* IMPORTANT */
+  width: 360px !important;
+  max-width: 360px !important;
+
+  height: auto !important;
+  object-fit: contain;
+}
+
+
+/* RED VERTICAL DIVIDER */
+
+.footer-red-line {
+  width: 3px;
+  height: 76px;
+  background: #e60018;
+  flex-shrink: 0;
+}
+
+
+/* BRAND SENTENCE */
+
+.footer-message {
+  margin: 0;
+
+  color: #b7b7b7;
+
+  font-size: 18px;
+  line-height: 1.65;
+
+  letter-spacing: 0.08em;
+  font-weight: 400;
+
+  max-width: 470px;
+}
+
+.footer-message span {
+  color: #e60018;
+}
+
+
+/* NAVIGATION */
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: clamp(30px, 3vw, 60px);
+
+  flex-shrink: 0;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+
+  transition:
+    color 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.footer-nav a:hover {
+  color: #e60018;
+}
+
+
+/* HORIZONTAL DIVIDER */
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.22);
+
+  margin: 25px 0 32px;
+}
+
+
+/* BOTTOM */
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+
+/* WORSHIP / PRAYER / STILLNESS */
+
+.footer-pillars {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #8f949d;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+}
+
+.footer-pillars b {
+  color: #e60018;
+  font-size: 11px;
+}
+
+
+/* COPYRIGHT */
+
+.footer-copyright {
+  margin: 0;
+
+  color: #8f949d;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.15em;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55px;
+  }
+
+  .footer-nav {
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .site-footer {
+    padding: 70px 0 35px;
+  }
+
+  .footer-inner {
+    width: 88%;
+  }
+
+
+  /* STACK BRAND */
+
+  .footer-brand {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    width: 230px !important;
+    max-width: 80vw !important;
+  }
+
+  .footer-red-line {
+    width: 45px;
+    height: 2px;
+
+    flex-basis: 45px;
+  }
+
+  .footer-message {
+    width: 100%;
+    max-width: 340px;
+
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  /* NAV */
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 20px 28px;
+  }
+
+  .footer-nav a {
+    font-size: 11px;
+  }
+
+
+  /* BOTTOM */
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .footer-pillars {
+    flex-wrap: wrap;
+  }
+
+  .footer-copyright {
+    font-size: 9px;
+  }
+
+}
