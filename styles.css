@@ -1423,3 +1423,39 @@ footer hr {
     max-width: 100% !important;
   }
 }
+
+
+/* =========================================
+   MAKOM FOOTER — FINAL
+   ========================================= */
+
+footer {
+  padding: 45px 7% 24px !important;
+  min-height: auto !important;
+}
+
+/* Logo */
+footer img {
+  width: 520px !important;
+  max-width: 520px !important;
+  height: auto !important;
+  display: block;
+  opacity: 1 !important;
+}
+
+/* Reduce space before divider */
+footer hr {
+  margin: 32px 0 22px !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 24px 24px !important;
+  }
+
+  footer img {
+    width: 260px !important;
+    max-width: 100% !important;
+  }
+}
