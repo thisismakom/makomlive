@@ -955,3 +955,61 @@
   }
 
 }
+
+
+/* SECTION 06 — FINAL LAYOUT FIX */
+
+.statement .statement-inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.statement .statement-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr) !important;
+  column-gap: clamp(80px, 10vw, 180px) !important;
+  align-items: start !important;
+  width: 100%;
+}
+
+.statement .statement-heading {
+  grid-column: 1 !important;
+}
+
+.statement .statement-posture {
+  grid-column: 2 !important;
+  padding-top: 70px;
+}
+
+.statement .statement-posture h3 {
+  font-size: clamp(38px, 3.7vw, 64px) !important;
+  line-height: 1.05 !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.04em;
+}
+
+.statement .statement-posture h3 span {
+  color: #df001b !important;
+}
+
+.statement .section-label {
+  display: block !important;
+  margin-bottom: 90px !important;
+}
+
+@media (max-width: 768px) {
+  .statement .statement-layout {
+    grid-template-columns: 1fr !important;
+    row-gap: 75px !important;
+  }
+
+  .statement .statement-heading,
+  .statement .statement-posture {
+    grid-column: 1 !important;
+  }
+
+  .statement .statement-posture {
+    padding-top: 0;
+  }
+}
