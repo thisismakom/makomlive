@@ -2008,3 +2008,155 @@ footer img {
     gap: 22px;
   }
 }
+
+
+/* MAKOM FOOTER — CLEAN FINAL OVERRIDE */
+
+.makom-footer {
+    background: #050505 !important;
+    padding: 45px 8% 28px !important;
+    min-height: 0 !important;
+    height: auto !important;
+}
+
+.footer-main {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin: 0 0 38px !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+}
+
+.footer-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 35px !important;
+}
+
+/* MAKOM logo */
+.makom-footer .footer-logo {
+    width: 240px !important;
+    max-width: 240px !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+}
+
+/* Sentence beside logo */
+.footer-message {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    letter-spacing: 0.08em !important;
+
+    color: #a9adb5 !important;
+    white-space: nowrap;
+}
+
+.footer-message span {
+    color: #e30620 !important;
+}
+
+/* Navigation */
+.footer-nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 42px !important;
+}
+
+.footer-nav a {
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-decoration: none !important;
+}
+
+/* Bottom */
+.footer-bottom {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none !important;
+}
+
+.footer-pillars {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+}
+
+.footer-pillars span,
+.footer-copyright {
+    font-size: 10px !important;
+    letter-spacing: 0.14em !important;
+    color: #89909b !important;
+}
+
+.footer-pillars b {
+    color: #e30620 !important;
+}
+
+.footer-copyright {
+    margin: 0 !important;
+}
+
+/* Kill old divider lines */
+.makom-footer::before,
+.makom-footer::after,
+.footer-main::before,
+.footer-main::after,
+.footer-bottom::before,
+.footer-bottom::after {
+    content: none !important;
+    display: none !important;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .makom-footer {
+        padding: 40px 25px 28px !important;
+    }
+
+    .footer-main {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 35px !important;
+        margin-bottom: 35px !important;
+    }
+
+    .footer-brand {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 18px !important;
+    }
+
+    .makom-footer .footer-logo {
+        width: 190px !important;
+    }
+
+    .footer-message {
+        white-space: normal;
+        font-size: 12px !important;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap !important;
+        gap: 20px 28px !important;
+    }
+
+    .footer-bottom {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 20px !important;
+    }
+}
