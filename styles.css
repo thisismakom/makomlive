@@ -783,3 +783,52 @@
   letter-spacing: -0.025em;
   font-weight: 500;
 }
+/* 05 / OUR VISION — DESKTOP REFINEMENT */
+
+.vision {
+  padding-top: 190px;
+  padding-bottom: 150px;
+}
+
+.vision .section-label {
+  margin-bottom: 70px;
+}
+
+.vision-layout {
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 8vw;
+  align-items: start;
+}
+
+.vision-symbol {
+  display: none;
+}
+
+.vision-heading h2 {
+  font-size: clamp(68px, 6.2vw, 105px);
+  line-height: 0.92;
+}
+
+.vision-content {
+  max-width: 540px;
+  padding-top: 35px;
+}
+
+.vision-content p {
+  text-align: left;
+}
+
+.vision-content .vision-lead {
+  font-size: clamp(21px, 1.6vw, 27px);
+  line-height: 1.55;
+  margin-bottom: 38px;
+}
+
+.vision-line {
+  margin: 50px 0;
+}
+
+.vision-statement {
+  font-size: clamp(27px, 2.1vw, 37px) !important;
+  line-height: 1.32 !important;
+}
