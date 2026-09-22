@@ -1794,3 +1794,19 @@ footer img {
   }
 
 }
+
+
+.footer-red-line {
+  width: 2px !important;
+  min-width: 2px !important;
+  height: 48px !important;
+  background: #e60018 !important;
+}
+
+.footer-message {
+  color: #b5b5b5 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.10em !important;
+}
