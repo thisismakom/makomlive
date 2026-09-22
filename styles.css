@@ -717,8 +717,7 @@
 }
 
 .vision .section-label {
-  margin-bottom: 90px;
-  color: rgba(0, 0, 0, 0.48);
+  margin-bottom: 70px;
 }
 
 .vision-layout {
@@ -728,8 +727,10 @@
   align-items: start;
 }
 
-.vision-heading {
+.vision {
   position: relative;
+  padding: 220px 8vw 150px;
+  min-height: 100vh;
 }
 
 .vision-symbol {
