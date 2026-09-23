@@ -4847,3 +4847,67 @@ footer img {
     transform: rotate(-45deg) !important;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  /* Header itself must NOT create the competing stacking layer */
+  header.nav,
+  .nav {
+    position: relative !important;
+    z-index: auto !important;
+  }
+
+  /* Full-screen menu */
+  .mobile-menu {
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100vw !important;
+    height: 100dvh !important;
+
+    background: #050505 !important;
+
+    z-index: 9998 !important;
+  }
+
+  /* Logo and hamburger/X */
+  .nav-logo,
+  .menu-toggle {
+    position: relative !important;
+    z-index: 9999 !important;
+  }
+
+  /* Hamburger */
+  .menu-toggle span {
+    position: absolute !important;
+    width: 34px !important;
+    height: 3px !important;
+    background: #fff !important;
+  }
+
+  .menu-toggle span:nth-child(1) {
+    transform: translateY(-10px) !important;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    transform: translateY(0) !important;
+  }
+
+  .menu-toggle span:nth-child(3) {
+    transform: translateY(10px) !important;
+  }
+
+  /* X */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) !important;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) !important;
+  }
+}
