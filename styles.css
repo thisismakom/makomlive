@@ -3542,3 +3542,122 @@ footer img {
   }
 
 }
+
+
+/* =====================================================
+   NEXT GATHERING — MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  #gathering {
+    padding: 90px 24px 80px;
+    overflow: hidden;
+  }
+
+  #gathering .section-marker {
+    position: static;
+    margin-bottom: 55px;
+    text-align: left;
+  }
+
+  .gathering-inner {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .gathering-eyebrow {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+
+  /* COME CLOSE / LINGER */
+  .gathering-title {
+    width: 100%;
+    margin: 0 auto 55px;
+    text-align: center;
+  }
+
+  .gathering-title span {
+    display: block;
+    font-size: clamp(46px, 13vw, 70px) !important;
+    line-height: .95;
+    white-space: normal;
+  }
+
+  .gathering-title em {
+    display: block;
+    margin-top: 12px;
+
+    font-size: clamp(36px, 10vw, 54px) !important;
+    line-height: 1;
+    white-space: normal;
+  }
+
+
+  /* DATE / IN PERSON / ONLINE */
+  .gathering-details {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    width: 100%;
+    margin: 0 auto;
+
+    border-top: 1px solid rgba(255,255,255,.18);
+  }
+
+  .gathering-detail {
+    width: 100%;
+
+    padding: 32px 15px !important;
+
+    text-align: center;
+
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+  }
+
+  .gathering-detail .detail-label {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .gathering-detail strong {
+    display: block;
+
+    font-size: 22px;
+    line-height: 1.05;
+  }
+
+  .gathering-detail small {
+    display: block;
+    margin-top: 10px;
+  }
+
+
+  /* WORSHIP • PRAYER • STILLNESS */
+  .gathering-values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px 14px;
+
+    margin-top: 32px;
+
+    font-size: 10px;
+    letter-spacing: .16em;
+  }
+
+
+  /* CTA */
+  .gathering-cta {
+    display: table;
+    margin: 42px auto 0;
+  }
+
+}
