@@ -3661,3 +3661,142 @@ footer img {
   }
 
 }
+
+
+/* =========================================================
+   MAKOM — VISION MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* SECTION */
+  #vision {
+    width: 100%;
+    max-width: 100vw;
+    padding: 80px 24px 90px !important;
+    overflow: hidden;
+  }
+
+  .vision-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+
+  /* 05 / OUR VISION */
+  #vision .section-label {
+    position: static !important;
+
+    width: 100% !important;
+    margin: 0 0 70px !important;
+
+    text-align: left !important;
+  }
+
+
+  /* CRITICAL FIX:
+     desktop = 2 columns
+     mobile = 1 column
+  */
+  .vision-layout {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    gap: 55px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  /* LEFT SIDE / HEADING */
+  .vision-heading {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  /* Hide symbol on mobile for cleaner composition */
+  .vision-symbol {
+    display: none !important;
+  }
+
+
+  /* CREATING SPACE FOR ENCOUNTER */
+  .vision-heading h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    font-size: clamp(48px, 13vw, 70px) !important;
+    line-height: 0.92 !important;
+    letter-spacing: -0.055em !important;
+
+    white-space: normal !important;
+  }
+
+  .vision-heading h2 em {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 0.94em !important;
+    line-height: 0.95 !important;
+
+    white-space: normal !important;
+  }
+
+
+  /* RIGHT SIDE / COPY */
+  .vision-content {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .vision-content p {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    font-size: 18px !important;
+    line-height: 1.65 !important;
+  }
+
+
+  /* FIRST PARAGRAPH */
+  .vision-lead {
+    margin-bottom: 28px !important;
+
+    font-size: 20px !important;
+    line-height: 1.55 !important;
+  }
+
+
+  /* DIVIDER */
+  .vision-line {
+    width: 100% !important;
+    margin: 42px 0 !important;
+  }
+
+
+  /* FINAL STATEMENT */
+  .vision-statement {
+    font-size: clamp(28px, 8vw, 38px) !important;
+    line-height: 1.15 !important;
+  }
+
+}
