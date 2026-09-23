@@ -4775,3 +4775,75 @@ footer img {
     transform: rotate(-45deg) !important;
   }
 }
+
+
+/* =========================================
+   MOBILE NAV - STACKING FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* Header must sit ABOVE the full-screen overlay */
+  header.nav,
+  .nav {
+    position: relative !important;
+    z-index: 30000 !important;
+  }
+
+  /* Full-screen menu sits below header controls */
+  .mobile-menu {
+    z-index: 20000 !important;
+  }
+
+  /* Logo + hamburger always visible */
+  .nav-logo {
+    position: relative !important;
+    z-index: 30001 !important;
+  }
+
+  .menu-toggle {
+    position: relative !important;
+    z-index: 30002 !important;
+    display: flex !important;
+    width: 64px !important;
+    height: 64px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Hamburger lines */
+  .menu-toggle span {
+    position: absolute !important;
+    display: block !important;
+    width: 34px !important;
+    height: 3px !important;
+    background: white !important;
+    opacity: 1 !important;
+  }
+
+  /* CLOSED hamburger */
+  .menu-toggle span:nth-child(1) {
+    transform: translateY(-10px) !important;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    transform: translateY(0) !important;
+  }
+
+  .menu-toggle span:nth-child(3) {
+    transform: translateY(10px) !important;
+  }
+
+  /* OPEN X */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) !important;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) !important;
+  }
+}
