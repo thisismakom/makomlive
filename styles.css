@@ -1831,777 +1831,195 @@ footer img {
 }
 
 
-/* =========================================
-   MAKOM FOOTER — FINAL COMPACT VERSION
+/* /* =========================================
+   MAKOM FOOTER — CLEAN FINAL
 ========================================= */
-
-.makom-footer {
-  background: #050505 !important;
-  color: #fff;
-  padding: 55px 7% 30px !important;
-  min-height: auto !important;
-}
-
-/* TOP ROW */
-.footer-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  margin-bottom: 55px;
-}
-
-/* BRAND AREA */
-.footer-brand {
-  display: flex !important;
-  align-items: center !important;
-  gap: 38px !important;
-}
-
-/* LOGO */
-.makom-footer .footer-logo {
-  width: 250px !important;
-  max-width: 250px !important;
-  height: auto !important;
-  object-fit: contain;
-  display: block;
-}
-
-/* BRAND SENTENCE */
-.footer-message {
-  margin: 0 !important;
-  color: #a5a8ae !important;
-  font-size: 13px !important;
-  line-height: 1.55 !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.1em !important;
-}
-
-.footer-message span {
-  color: #e60018;
-}
-
-/* NAVIGATION */
-.footer-nav {
-  display: flex;
-  align-items: center;
-  gap: 45px;
-}
-
-.footer-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  transition: opacity 0.2s ease;
-}
-
-.footer-nav a:hover {
-  opacity: 0.6;
-}
-
-/* BOTTOM ROW — NO DIVIDER LINE */
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  border: 0 !important;
-  border-top: 0 !important;
-
-  padding-top: 0 !important;
-}
-
-/* WORSHIP • PRAYER • STILLNESS */
-.footer-pillars {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.footer-pillars span {
-  color: #8f949d;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-}
-
-.footer-pillars b {
-  color: #e60018;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-/* COPYRIGHT */
-.footer-copyright {
-  margin: 0;
-  color: #777d87;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-}
-
-
-/* =========================================
-   REMOVE OLD FOOTER LINES / DIVIDERS
-========================================= */
-
-.makom-footer::before,
-.makom-footer::after,
-.footer-main::before,
-.footer-main::after,
-.footer-bottom::before,
-.footer-bottom::after {
-  display: none !important;
-  content: none !important;
-}
-
-.makom-footer,
-.footer-main,
-.footer-bottom {
-  border-top: none !important;
-  border-bottom: none !important;
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 768px) {
-
-  .makom-footer {
-    padding: 45px 25px 28px !important;
-  }
-
-  .footer-main {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 38px;
-    margin-bottom: 42px;
-  }
-
-  .footer-brand {
-    flex-direction: column;
-    align-items: flex-start !important;
-    gap: 18px !important;
-  }
-
-  .makom-footer .footer-logo {
-    width: 200px !important;
-    max-width: 200px !important;
-  }
-
-  .footer-message {
-    font-size: 12px !important;
-  }
-
-  .footer-nav {
-    flex-wrap: wrap;
-    gap: 18px 28px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 22px;
-  }
-}
-
-
-/* MAKOM FOOTER — CLEAN FINAL OVERRIDE */
 
 .makom-footer {
     background: #050505 !important;
-    padding: 45px 8% 28px !important;
-    min-height: 0 !important;
-    height: auto !important;
-}
-
-.footer-main {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    margin: 0 0 38px !important;
-    padding: 0 !important;
-    min-height: 0 !important;
-}
-
-.footer-brand {
-    display: flex !important;
-    align-items: center !important;
-    gap: 35px !important;
-}
-
-/* MAKOM logo */
-.makom-footer .footer-logo {
-    width: 240px !important;
-    max-width: 240px !important;
-    height: auto !important;
-    display: block !important;
-    object-fit: contain !important;
-}
-
-/* Sentence beside logo */
-.footer-message {
-    margin: 0 !important;
-    padding: 0 !important;
-
-    font-size: 13px !important;
-    line-height: 1.5 !important;
-    letter-spacing: 0.08em !important;
-
-    color: #a9adb5 !important;
-    white-space: nowrap;
-}
-
-.footer-message span {
-    color: #e30620 !important;
-}
-
-/* Navigation */
-.footer-nav {
-    display: flex !important;
-    align-items: center !important;
-    gap: 42px !important;
-}
-
-.footer-nav a {
-    color: #fff !important;
-    font-size: 12px !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.12em !important;
-    text-decoration: none !important;
-}
-
-/* Bottom */
-.footer-bottom {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    border: none !important;
-}
-
-.footer-pillars {
-    display: flex !important;
-    align-items: center !important;
-    gap: 16px !important;
-}
-
-.footer-pillars span,
-.footer-copyright {
-    font-size: 10px !important;
-    letter-spacing: 0.14em !important;
-    color: #89909b !important;
-}
-
-.footer-pillars b {
-    color: #e30620 !important;
-}
-
-.footer-copyright {
-    margin: 0 !important;
-}
-
-/* Kill old divider lines */
-.makom-footer::before,
-.makom-footer::after,
-.footer-main::before,
-.footer-main::after,
-.footer-bottom::before,
-.footer-bottom::after {
-    content: none !important;
-    display: none !important;
-}
-
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-    .makom-footer {
-        padding: 40px 25px 28px !important;
-    }
-
-    .footer-main {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        gap: 35px !important;
-        margin-bottom: 35px !important;
-    }
-
-    .footer-brand {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        gap: 18px !important;
-    }
-
-    .makom-footer .footer-logo {
-        width: 190px !important;
-    }
-
-    .footer-message {
-        white-space: normal;
-        font-size: 12px !important;
-    }
-
-    .footer-nav {
-        flex-wrap: wrap !important;
-        gap: 20px 28px !important;
-    }
-
-    .footer-bottom {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        gap: 20px !important;
-    }
-}
-
-
-/* =====================================================
-   MAKOM FOOTER
-===================================================== */
-
-.makom-footer {
-    background: #050505;
     color: #ffffff;
+    padding: 35px 7% 20px !important;
+    box-sizing: border-box;
     width: 100%;
-    padding: 0;
-    margin: 0;
 }
 
-.footer-inner {
-    width: min(1600px, 88%);
+
+/* MAIN ROW */
+
+.makom-footer-main {
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 48px 0 28px;
-}
 
-
-/* =========================
-   TOP ROW
-========================= */
-
-.footer-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 60px;
 }
 
 
-/* BRAND AREA */
+/* LOGO + STATEMENT */
 
-.footer-brand {
+.makom-footer-brand {
     display: flex;
     align-items: center;
-    gap: 38px;
+    gap: 35px;
+    flex-shrink: 0;
 }
 
 
-/* LOGO */
-
-.makom-footer .footer-logo {
-    display: block;
-    width: 230px;
-    max-width: 230px;
-    height: auto;
+.makom-footer-logo {
+    width: 230px !important;
+    max-width: 230px !important;
+    height: auto !important;
+    display: block !important;
     object-fit: contain;
 }
 
 
-/* TAGLINE */
+/* BRAND SENTENCE */
 
-.footer-tagline {
-    margin: 0;
-    color: #b6bac3;
-
-    font-size: 14px;
-    line-height: 1.55;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-}
-
-.footer-tagline span {
-    color: #e30620;
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-.footer-nav {
-    display: flex;
-    align-items: center;
-    gap: 52px;
-}
-
-.footer-nav a {
-    color: #ffffff;
-    text-decoration: none;
+.makom-footer-copy {
+    margin: 0 !important;
 
     font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 1.7px;
+
+    color: #d6d9df;
+    font-weight: 500;
+}
+
+.makom-footer-copy span {
+    color: #e4001b;
+}
+
+
+/* NAV */
+
+.makom-footer-nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 42px;
+}
+
+
+.makom-footer-nav a,
+.makom-footer-nav a:visited {
+    color: #ffffff !important;
+    text-decoration: none !important;
+
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 1.5px;
 
-    transition: color 0.25s ease;
-}
-
-.footer-nav a:hover {
-    color: #e30620;
+    white-space: nowrap;
 }
 
 
-/* =========================
-   SINGLE FOOTER LINE
-========================= */
+.makom-footer-nav a:hover {
+    color: #e4001b !important;
+}
 
-.footer-line {
-    width: 100%;
+
+/* SINGLE LINE */
+
+.makom-footer-line {
+    max-width: 1500px;
     height: 1px;
+    margin: 28px auto 17px;
 
-    background: rgba(255, 255, 255, 0.20);
-
-    margin: 42px 0 25px;
+    background: rgba(255,255,255,0.18);
 }
 
 
-/* =========================
-   BOTTOM ROW
-========================= */
+/* BOTTOM */
 
-.footer-bottom {
+.makom-footer-bottom {
+    max-width: 1500px;
+    margin: 0 auto;
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 
-/* WORSHIP • PRAYER • STILLNESS */
+/* VALUES */
 
-.footer-pillars {
+.makom-footer-values {
     display: flex;
     align-items: center;
-    gap: 15px;
-}
+    gap: 14px;
 
-.footer-pillars span {
-    color: #a4aab5;
+    color: #a6afbd;
 
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 600;
-    letter-spacing: 0.15em;
+    letter-spacing: 1.8px;
 }
 
-.footer-pillars b {
-    color: #e30620;
-    font-size: 10px;
+
+.makom-footer-values b {
+    color: #e4001b;
 }
 
 
 /* COPYRIGHT */
 
-.footer-copyright {
-    margin: 0;
+.makom-footer-bottom p {
+    margin: 0 !important;
 
-    color: #8d939e;
+    color: #8d96a5;
 
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
 }
 
 
-/* =========================
-   REMOVE OLD FOOTER EFFECTS
-========================= */
-
-.makom-footer::before,
-.makom-footer::after,
-.footer-inner::before,
-.footer-inner::after,
-.footer-top::before,
-.footer-top::after,
-.footer-bottom::before,
-.footer-bottom::after {
-    content: none !important;
-    display: none !important;
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 1050px) {
-
-    .footer-top {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 35px;
-    }
-
-    .footer-nav {
-        gap: 32px;
-    }
-}
-
-
-/* =====================================================
+/* =========================================
    MOBILE
-===================================================== */
+========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
 
-    .footer-inner {
-        width: 88%;
-        padding: 42px 0 28px;
+    .makom-footer {
+        padding: 32px 7% 22px !important;
     }
 
-    .footer-brand {
+    .makom-footer-main {
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+        gap: 28px;
     }
 
-    .makom-footer .footer-logo {
-        width: 190px;
-        max-width: 190px;
-    }
-
-    .footer-tagline {
-        font-size: 12px;
-    }
-
-    .footer-nav {
-        flex-wrap: wrap;
-        gap: 18px 28px;
-    }
-
-    .footer-nav a {
-        font-size: 10px;
-    }
-
-    .footer-line {
-        margin: 32px 0 22px;
-    }
-
-    .footer-bottom {
+    .makom-footer-brand {
         flex-direction: column;
         align-items: flex-start;
         gap: 18px;
     }
 
-}
+    .makom-footer-logo {
+        width: 200px !important;
+        max-width: 200px !important;
+    }
 
+    .makom-footer-nav {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18px 25px;
+    }
 
-/* =========================================
-   MAKOM FOOTER — COMPACT FINAL
-   ========================================= */
+    .makom-footer-line {
+        margin: 27px 0 18px;
+    }
 
-.site-footer {
-  background: #050505;
-  color: #fff;
-  padding: 42px 8% 24px;
-  width: 100%;
-  box-sizing: border-box;
-}
+    .makom-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
 
-
-/* TOP ROW */
-
-.footer-top {
-  max-width: 1500px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  align-items: center;
-  column-gap: 34px;
-}
-
-
-/* LOGO */
-
-.footer-brand {
-  display: flex;
-  align-items: center;
-}
-
-.footer-brand img {
-  width: 240px !important;
-  max-width: 240px !important;
-  height: auto !important;
-  display: block;
-  object-fit: contain;
-}
-
-
-/* STATEMENT */
-
-.footer-statement {
-  margin: 0;
-  color: #e8e8e8;
-  font-size: 13px;
-  line-height: 1.6;
-  letter-spacing: 2px;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.footer-statement span {
-  color: #e6001b;
-}
-
-
-/* NAVIGATION */
-
-.footer-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 46px;
-}
-
-.footer-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  transition: color .25s ease;
-}
-
-.footer-nav a:hover {
-  color: #e6001b;
-}
-
-
-/* ONE FOOTER LINE ONLY */
-
-.footer-divider {
-  max-width: 1500px;
-  height: 1px;
-  background: rgba(255,255,255,.18);
-  margin: 34px auto 20px;
-}
-
-
-/* BOTTOM ROW */
-
-.footer-bottom {
-  max-width: 1500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-/* WORSHIP • PRAYER • STILLNESS */
-
-.footer-posture {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-
-  color: #9aa3b3;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 1.8px;
-}
-
-.footer-posture b {
-  color: #e6001b;
-  font-size: 11px;
-}
-
-
-/* COPYRIGHT */
-
-.footer-copyright {
-  color: #8d95a3;
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-}
-
-
-/* =========================================
-   TABLET / MOBILE
-   ========================================= */
-
-@media (max-width: 900px) {
-
-  .site-footer {
-    padding: 38px 7% 24px;
-  }
-
-  .footer-top {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .footer-brand img {
-    width: 210px !important;
-    max-width: 210px !important;
-  }
-
-  .footer-statement {
-    white-space: normal;
-  }
-
-  .footer-nav {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 18px 28px;
-  }
-
-  .footer-divider {
-    margin: 30px 0 20px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-  }
-}
-
-
-@media (max-width: 520px) {
-
-  .site-footer {
-    padding: 32px 6% 22px;
-  }
-
-  .footer-brand img {
-    width: 185px !important;
-    max-width: 185px !important;
-  }
-
-  .footer-statement {
-    font-size: 11px;
-    letter-spacing: 1.4px;
-  }
-
-  .footer-nav {
-    gap: 16px 22px;
-  }
-
-  .footer-nav a {
-    font-size: 10px;
-  }
-
-  .footer-posture {
-    gap: 9px;
-    font-size: 8px;
-  }
-
-  .footer-copyright {
-    font-size: 8px;
-  }
 }
