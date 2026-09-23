@@ -3348,3 +3348,197 @@ footer img {
   }
 
 }
+
+
+/* ==================================================
+   FINAL MOBILE HERO FIX
+   ================================================== */
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-inner {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero-title {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+  }
+
+  /* ENCOUNTER */
+  .hero-title span {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    font-size: clamp(42px, 12vw, 58px) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.055em !important;
+
+    white-space: nowrap !important;
+    text-align: center !important;
+
+    transform: none !important;
+  }
+
+  /* GOD. */
+  .hero-title em {
+    display: block !important;
+
+    margin-top: 10px;
+
+    font-size: clamp(72px, 20vw, 96px) !important;
+    line-height: 0.9 !important;
+
+    white-space: nowrap !important;
+    text-align: center !important;
+
+    transform: none !important;
+  }
+
+}
+
+
+/* Extra protection for narrow phones */
+@media screen and (max-width: 430px) {
+
+  .hero-title span {
+    font-size: 11.5vw !important;
+    letter-spacing: -0.06em !important;
+  }
+
+  .hero-title em {
+    font-size: 20vw !important;
+  }
+
+}
+
+/* ==========================================
+   MAKOM — GATHERING SECTION MOBILE FIX
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+  /* Main gathering section */
+  #gathering {
+    width: 100%;
+    max-width: 100%;
+    padding: 70px 24px 90px !important;
+    overflow: hidden;
+  }
+
+  /* Any inner container */
+  #gathering .section-inner,
+  #gathering .gathering-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* COME. BE STILL. */
+  #gathering h2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(52px, 14vw, 76px) !important;
+    line-height: .92 !important;
+    letter-spacing: -0.05em !important;
+  }
+
+  /* Intro paragraph */
+  #gathering .intro,
+  #gathering .section-intro,
+  #gathering > div > p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ========================================
+     FORCE THE 3 RHYTHMS INTO ONE COLUMN
+     ======================================== */
+
+  #gathering .rhythms,
+  #gathering .rhythm-grid,
+  #gathering .rhythms-grid,
+  #gathering .gathering-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 0 !important;
+  }
+
+  #gathering .rhythm,
+  #gathering .rhythm-item,
+  #gathering .gathering-item {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    padding: 38px 0 !important;
+    margin: 0 !important;
+
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+  }
+
+  /* 01 / 02 / 03 */
+  #gathering .rhythm-number,
+  #gathering .number {
+    display: block;
+    margin-bottom: 28px;
+
+    font-size: 14px;
+    letter-spacing: .18em;
+  }
+
+  /* WORSHIP / PRAYER / STILLNESS */
+  #gathering .rhythm h3,
+  #gathering .rhythm-item h3,
+  #gathering .gathering-item h3 {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 0 20px !important;
+
+    font-size: clamp(38px, 11vw, 52px) !important;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+
+    white-space: normal !important;
+  }
+
+  /* Description under each rhythm */
+  #gathering .rhythm p,
+  #gathering .rhythm-item p,
+  #gathering .gathering-item p {
+    width: 100% !important;
+    max-width: 520px !important;
+
+    margin: 0 !important;
+
+    font-size: 18px !important;
+    line-height: 1.65 !important;
+  }
+
+}
