@@ -4573,3 +4573,106 @@ footer img {
     }
 
 }
+
+
+/* =========================================
+   MAKOM MOBILE — FINAL OVERRIDE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: auto !important;
+        height: auto !important;
+        padding-top: 100px !important;
+        padding-bottom: 90px !important;
+    }
+
+    .hero-inner {
+        min-height: 0 !important;
+        height: auto !important;
+
+        margin: 0 auto !important;
+        padding: 0 20px !important;
+
+        justify-content: flex-start !important;
+        align-items: center !important;
+        transform: none !important;
+    }
+
+
+    /* ---------- MENU BUTTON ---------- */
+
+    .menu-toggle {
+        width: 60px !important;
+        height: 60px !important;
+        padding: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: transparent !important;
+        border: 0 !important;
+    }
+
+
+    /* Completely neutralize old span rules */
+
+    .menu-toggle span,
+    .menu-toggle.active span,
+    .menu-toggle.active span:nth-child(1),
+    .menu-toggle.active span:nth-child(2),
+    .menu-toggle.active span:nth-child(3) {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        background: transparent !important;
+        transform: none !important;
+    }
+
+
+    /* CLOSED = hamburger */
+
+    .menu-toggle .hamburger-icon {
+        display: block !important;
+        opacity: 1 !important;
+
+        color: #fff !important;
+        font-size: 46px !important;
+        line-height: 1 !important;
+    }
+
+    .menu-toggle .close-icon {
+        display: none !important;
+        opacity: 0 !important;
+    }
+
+
+    /* OPEN = X */
+
+    .menu-toggle.active .hamburger-icon {
+        display: none !important;
+        opacity: 0 !important;
+    }
+
+    .menu-toggle.active .close-icon {
+        display: block !important;
+        opacity: 1 !important;
+
+        color: #fff !important;
+        font-size: 58px !important;
+        line-height: 1 !important;
+    }
+
+
+    /* Kill any old generated icons */
+
+    .menu-toggle::before,
+    .menu-toggle::after {
+        content: none !important;
+        display: none !important;
+    }
+}
