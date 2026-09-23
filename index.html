@@ -475,6 +475,7 @@
     menuToggle.setAttribute('aria-expanded', isOpen);
   });
 
+  // Close menu after clicking a link
   document.querySelectorAll('.mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
       menuToggle.classList.remove('active');
@@ -483,6 +484,3 @@
     });
   });
 </script>
-
-</body>
-</html>
