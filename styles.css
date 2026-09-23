@@ -2023,3 +2023,52 @@ footer img {
     }
 
 }
+
+
+/* =========================================
+   MAKOM FOOTER — REDUCE HEIGHT
+========================================= */
+
+.makom-footer {
+    padding: 18px 7% 12px !important;
+}
+
+.makom-footer-line {
+    margin: 16px auto 12px !important;
+}
+
+/* Main row */
+.makom-footer-main {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+/* Logo */
+.makom-footer-logo {
+    width: 210px !important;
+    max-width: 210px !important;
+}
+
+/* Remove excessive spacing around brand */
+.makom-footer-brand {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Divider much closer to main row */
+.makom-footer-line {
+    margin: 22px auto 14px !important;
+}
+
+/* Bottom row */
+.makom-footer-bottom {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Remove paragraph spacing */
+.makom-footer-bottom p {
+    margin: 0 !important;
+}
