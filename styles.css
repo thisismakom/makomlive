@@ -4325,3 +4325,51 @@ html, body { max-width: 100%; overflow-x: hidden; }
         right: 7%;
     }
 }
+
+
+/* =========================================
+   MAKOM — MOBILE MENU FINAL FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Keep header above full-screen menu */
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+
+    /* Logo must remain visible */
+    .nav-logo {
+        position: relative;
+        z-index: 1003;
+    }
+
+    /* Menu button must remain visible */
+    .menu-toggle {
+        position: relative;
+        z-index: 1003;
+    }
+
+    /* Full-screen menu sits below controls */
+    .mobile-menu {
+        z-index: 1000;
+    }
+
+    /* Hide hamburger when menu is open */
+    .menu-toggle.active .hamburger-icon {
+        display: none;
+    }
+
+    /* Show X */
+    .menu-toggle.active .close-icon {
+        display: block;
+        color: #fff;
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 1;
+    }
+}
