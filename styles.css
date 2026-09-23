@@ -3932,1145 +3932,152 @@ footer img {
   }
 
 }
-/* ========================================
-   MOBILE NAVIGATION
-======================================== */
 
-.menu-toggle {
-  display: none;
-  background: none;
-  border: 0;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1001;
+/* =========================================================
+   MAKOM — CLEAN MOBILE NAVIGATION
+   One authoritative mobile menu system.
+   ========================================================= */
+
+/* Prevent accidental horizontal scrolling from oversized display type. */
+html, body { max-width: 100%; overflow-x: hidden; }
+
+/* Fixed-header anchor landing room. */
+#heart, #vision, #gatherings, #next-gathering, #connect {
+  scroll-margin-top: 110px;
 }
 
-.menu-toggle span {
-  display: block;
-  width: 34px;
-  height: 3px;
-  margin: 6px 0;
-  background: #fff;
-  transition: 0.3s ease;
-}
-
-
-/* =========================
-   MOBILE NAVIGATION
-========================= */
-
+/* Hidden on desktop. */
+.menu-toggle,
 .mobile-menu {
   display: none;
 }
 
-@media (max-width: 768px) {
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-
-    position: relative;
-    z-index: 10001;
-
-    background: none;
-    border: 0;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  .menu-toggle span {
-    display: block;
-    width: 34px;
-    height: 3px;
-    background: #fff;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .mobile-menu {
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100vh;
-
-    background: #050505;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    gap: 30px;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    transition: opacity 0.3s ease,
-                visibility 0.3s ease;
-
-    z-index: 1000;
-  }
-
-  .mobile-menu.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  .mobile-menu a {
-    color: #fff;
-    text-decoration: none;
-
-    font-size: 24px;
-    font-weight: 700;
-
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-
-  /* Turn hamburger into X */
-
-  .menu-toggle.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-
+@media (min-width: 769px) {
+  .desktop-nav { display: flex; }
 }
 
 @media (max-width: 768px) {
+  .desktop-nav { display: none !important; }
 
-  /* COME AS YOU ARE section */
-  .welcome,
-  .come-as-you-are {
-    padding-top: 90px !important;
-    padding-bottom: 80px !important;
-  }
-
-  .welcome .section-label,
-  .come-as-you-are .section-label {
-    margin-bottom: 70px !important;
-  }
-
-  .welcome h2,
-  .come-as-you-are h2 {
-    margin-top: 0 !important;
-    margin-bottom: 70px !important;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .vision {
-    padding: 100px 24px 80px;
-  }
-
-  .vision-inner {
-    width: 100%;
-  }
-
-  .vision .section-label {
-    margin-bottom: 70px;
-  }
-
-  .vision-layout {
-    display: block;
-  }
-
-  .vision-heading {
-    margin: 0 0 60px;
-  }
-
-  .vision-heading h2 {
-    margin: 0;
-  }
-
-  .vision-content {
-    width: 100%;
-  }
-
-}
-
-
-@media (max-width: 768px) {
-
-  /* Mobile menu overlay */
-  .mobile-menu {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100% !important;
-    height: 100dvh !important;
-
-    background: #050505 !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 28px !important;
-
-    z-index: 9998 !important;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-
-  /* Menu becomes visible */
-  .mobile-menu.active {
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-  }
-
-  /* Menu links */
-  .mobile-menu a {
-    display: block !important;
-    color: #fff !important;
-    text-decoration: none !important;
-    text-transform: uppercase;
-
-    font-size: 24px !important;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-  }
-
-  /* Keep logo and X above menu */
-  .nav-logo,
-  .menu-toggle {
-    position: relative;
-    z-index: 9999 !important;
-  }
-
-}
-
-
-/* =========================================
-   FINAL MOBILE NAVIGATION FIX
-   ========================================= */
-
-@media (max-width: 768px) {
-
-    /* Hide desktop navigation */
-    .desktop-nav {
-        display: none !important;
-    }
-
-    /* Header stays above mobile overlay */
-    .nav {
-        position: relative;
-        z-index: 10001;
-    }
-
-    /* Logo */
-    .nav-logo {
-        position: relative;
-        z-index: 10002 !important;
-    }
-
-    /* Hamburger */
-    .menu-toggle {
-        display: flex !important;
-        flex-direction: column;
-        justify-content: center;
-        gap: 6px;
-
-        position: relative;
-        z-index: 10003 !important;
-
-        background: transparent;
-        border: 0;
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    .menu-toggle span {
-        display: block;
-        width: 34px;
-        height: 3px;
-        background: #fff;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    /* Full-screen menu */
-    .mobile-menu {
-        position: fixed !important;
-        inset: 0 !important;
-        width: 100% !important;
-        height: 100vh !important;
-
-        background: #050505 !important;
-
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        gap: 28px !important;
-
-        opacity: 0 !important;
-        visibility: hidden !important;
-        pointer-events: none !important;
-
-        z-index: 10000 !important;
-
-        transition:
-            opacity 0.3s ease,
-            visibility 0.3s ease !important;
-    }
-
-    /* OPEN STATE */
-    .mobile-menu.active {
-        opacity: 1 !important;
-        visibility: visible !important;
-        pointer-events: auto !important;
-    }
-
-    /* Navigation links */
-    .mobile-menu a {
-        display: block !important;
-        position: relative !important;
-
-        color: #fff !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-
-        font-size: 24px !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.08em !important;
-        line-height: 1.2 !important;
-
-        text-decoration: none !important;
-        text-transform: uppercase !important;
-    }
-
-    .mobile-menu a:hover {
-        color: #ed001b !important;
-    }
-
-    /* Hamburger → X */
-    .menu-toggle.active span:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
-}
-
-
-/* ==================================================
-   MAKOM — MOBILE NAV FINAL OVERRIDE
-   Paste at the VERY BOTTOM of styles.css
-   ================================================== */
-
-@media (max-width: 768px) {
-
-  /* Hide desktop navigation */
-  .desktop-nav {
-    display: none !important;
-  }
-
-  /* Header */
-  header.nav {
-    position: relative !important;
+  /* Keep the existing fixed header and its controls above the overlay. */
+  header.nav,
+  .nav {
     z-index: 10002 !important;
   }
 
-  /* Logo stays visible */
-  header.nav .nav-logo {
-    position: relative !important;
+  .nav-logo {
+    position: relative;
     z-index: 10004 !important;
   }
 
-  /* Hamburger button stays above overlay */
-  header.nav .menu-toggle {
+  /* Button */
+  .menu-toggle {
     display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 6px !important;
-
     position: relative !important;
     z-index: 10005 !important;
-
-    background: transparent !important;
-    border: 0 !important;
-    padding: 10px !important;
-    cursor: pointer !important;
-  }
-
-  /* Hamburger lines */
-  header.nav .menu-toggle span {
-    display: block !important;
-    width: 34px !important;
-    height: 3px !important;
-    background: #ffffff !important;
-    transition: transform 0.3s ease, opacity 0.3s ease !important;
-  }
-
-  /* Mobile menu overlay */
-  header.nav .mobile-menu {
-    position: fixed !important;
-    top: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    left: 0 !important;
-
-    width: 100vw !important;
-    height: 100vh !important;
-    height: 100dvh !important;
-
-    margin: 0 !important;
+    width: 48px !important;
+    height: 48px !important;
     padding: 0 !important;
-
-    background: #050505 !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
+    margin: 0 !important;
     align-items: center !important;
-    gap: 28px !important;
-
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-
-    z-index: 10003 !important;
-
-    transition:
-      opacity 0.3s ease,
-      visibility 0.3s ease !important;
-  }
-
-  /* OPEN MENU */
-  header.nav .mobile-menu.active {
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-  }
-
-  /* Menu links */
-  header.nav .mobile-menu a {
-    display: block !important;
-
-    color: #ffffff !important;
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-
-    font-size: 22px !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.08em !important;
-
-    position: relative !important;
-    z-index: 10004 !important;
-
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-  }
-
-  /* Hamburger → X */
-  header.nav .menu-toggle.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg) !important;
-  }
-
-  header.nav .menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  header.nav .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg) !important;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .menu-toggle span {
-    transform-origin: center !important;
-  }
-
-  .menu-toggle.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg) !important;
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg) !important;
-  }
-
-}
-
-
-/* =========================================
-   DEFINITIVE MOBILE MENU X FIX
-   ========================================= */
-
-@media (max-width: 768px) {
-
-  /* When menu is open, hide all original bars */
-  .menu-toggle.active span {
-    opacity: 0 !important;
-    transform: none !important;
-  }
-
-  /* Make button the positioning container */
-  .menu-toggle {
-    position: relative !important;
-    width: 54px !important;
-    height: 54px !important;
-  }
-
-  /* Create the two lines of the X */
-  .menu-toggle.active::before,
-  .menu-toggle.active::after {
-    content: "" !important;
-    position: absolute !important;
-
-    top: 50% !important;
-    left: 50% !important;
-
-    width: 42px !important;
-    height: 3px !important;
-
-    background: #ffffff !important;
-
-    transform-origin: center !important;
-    opacity: 1 !important;
-
-    z-index: 10010 !important;
-  }
-
-  .menu-toggle.active::before {
-    transform: translate(-50%, -50%) rotate(45deg) !important;
-  }
-
-  .menu-toggle.active::after {
-    transform: translate(-50%, -50%) rotate(-45deg) !important;
-  }
-
-}
-
-
-/* FINAL MOBILE MENU ICON */
-
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-
-        width: 60px !important;
-        height: 60px !important;
-
-        padding: 0 !important;
-        border: 0 !important;
-        background: transparent !important;
-
-        position: relative !important;
-        z-index: 10003 !important;
-    }
-
-    /* Kill ALL previous hamburger span styling */
-    .menu-toggle span {
-        position: static !important;
-        width: auto !important;
-        height: auto !important;
-        background: none !important;
-        transform: none !important;
-        opacity: 1;
-    }
-
-    .hamburger-icon {
-        display: block !important;
-        color: white !important;
-        font-size: 46px !important;
-        font-weight: 300 !important;
-        line-height: 1 !important;
-    }
-
-    .close-icon {
-        display: none !important;
-        color: white !important;
-        font-size: 58px !important;
-        font-weight: 200 !important;
-        line-height: 1 !important;
-    }
-
-    /* OPEN */
-
-    .menu-toggle.active .hamburger-icon {
-        display: none !important;
-    }
-
-    .menu-toggle.active .close-icon {
-        display: block !important;
-    }
-
-    /* Disable old pseudo-element attempts */
-    .menu-toggle::before,
-    .menu-toggle::after {
-        content: none !important;
-        display: none !important;
-    }
-}
-
-
-/* =========================================
-   MOBILE HERO POSITION FIX
-   ========================================= */
-
-@media (max-width: 768px) {
-
-    .hero {
-        min-height: auto !important;
-        height: auto !important;
-        padding-top: 180px !important;
-        padding-bottom: 100px !important;
-    }
-
-    .hero-inner {
-        min-height: auto !important;
-        height: auto !important;
-        justify-content: flex-start !important;
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-    }
-
-}
-
-/* DESKTOP NAV DEBUG / FIX */
-@media (min-width: 769px) {
-
-    .mobile-menu,
-    .menu-toggle {
-        display: none !important;
-    }
-
-}
-
-
-/* =========================================
-   MAKOM MOBILE — FINAL OVERRIDE
-   ========================================= */
-
-@media (max-width: 768px) {
-
-    /* ---------- HERO ---------- */
-
-    .hero {
-        min-height: auto !important;
-        height: auto !important;
-        padding-top: 100px !important;
-        padding-bottom: 90px !important;
-    }
-
-    .hero-inner {
-        min-height: 0 !important;
-        height: auto !important;
-
-        margin: 0 auto !important;
-        padding: 0 20px !important;
-
-        justify-content: flex-start !important;
-        align-items: center !important;
-        transform: none !important;
-    }
-
-
-    /* ---------- MENU BUTTON ---------- */
-
-    .menu-toggle {
-        width: 60px !important;
-        height: 60px !important;
-        padding: 0 !important;
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-
-        background: transparent !important;
-        border: 0 !important;
-    }
-
-
-    /* Completely neutralize old span rules */
-
-    .menu-toggle span,
-    .menu-toggle.active span,
-    .menu-toggle.active span:nth-child(1),
-    .menu-toggle.active span:nth-child(2),
-    .menu-toggle.active span:nth-child(3) {
-        position: static !important;
-        width: auto !important;
-        height: auto !important;
-        background: transparent !important;
-        transform: none !important;
-    }
-
-
-    /* CLOSED = hamburger */
-
-    .menu-toggle .hamburger-icon {
-        display: block !important;
-        opacity: 1 !important;
-
-        color: #fff !important;
-        font-size: 46px !important;
-        line-height: 1 !important;
-    }
-
-    .menu-toggle .close-icon {
-        display: none !important;
-        opacity: 0 !important;
-    }
-
-
-    /* OPEN = X */
-
-    .menu-toggle.active .hamburger-icon {
-        display: none !important;
-        opacity: 0 !important;
-    }
-
-    .menu-toggle.active .close-icon {
-        display: block !important;
-        opacity: 1 !important;
-
-        color: #fff !important;
-        font-size: 58px !important;
-        line-height: 1 !important;
-    }
-
-
-    /* Kill any old generated icons */
-
-    .menu-toggle::before,
-    .menu-toggle::after {
-        content: none !important;
-        display: none !important;
-    }
-}
-
-
-/* =========================================
-   MAKOM MOBILE HERO — MASTER OVERRIDE
-   ========================================= */
-
-@media (max-width: 768px) {
-
-    .hero {
-        min-height: 0 !important;
-        height: auto !important;
-
-        display: block !important;
-
-        padding: 40px 20px 80px !important;
-        margin: 0 !important;
-
-        overflow: hidden;
-    }
-
-    .hero-inner {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        min-height: 0 !important;
-        height: auto !important;
-
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: flex-start !important;
-        align-items: center !important;
-
-        margin: 0 auto !important;
-        padding: 0 !important;
-
-        position: relative !important;
-        top: auto !important;
-        left: auto !important;
-        transform: none !important;
-    }
-
-}
-
-
-/* =========================================
-   FINAL HAMBURGER / X OVERRIDE
-   ========================================= */
-
-@media (max-width: 768px) {
-
-  .menu-toggle {
-    display: flex !important;
-    flex-direction: column !important;
     justify-content: center !important;
-    align-items: center !important;
-    gap: 6px !important;
-
-    width: 64px !important;
-    height: 64px !important;
-
-    position: relative !important;
-    z-index: 20000 !important;
-
     background: transparent !important;
     border: 0 !important;
+    color: #fff !important;
+    cursor: pointer;
   }
 
-  .menu-toggle span {
+  /* The HTML contains .hamburger-icon and .close-icon. Hide their text glyphs;
+     CSS draws the icons so there can never be a fourth hamburger line. */
+  .menu-toggle .hamburger-icon,
+  .menu-toggle .close-icon {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    background: transparent !important;
+  }
+
+  /* Exactly three hamburger bars: center + ::before + ::after. */
+  .menu-toggle .hamburger-icon {
     display: block !important;
-    width: 34px !important;
-    height: 3px !important;
-    min-height: 3px !important;
-    background: #fff !important;
-    opacity: 1 !important;
-
-    transform-origin: center !important;
-    transition: transform .3s ease, opacity .3s ease !important;
-  }
-
-  /* OPEN: make a clean X */
-  .menu-toggle.active {
-    gap: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(1) {
     position: absolute !important;
-    transform: rotate(45deg) !important;
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    position: absolute !important;
-    opacity: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    position: absolute !important;
-    transform: rotate(-45deg) !important;
-  }
-}
-
-
-/* =========================================
-   MOBILE NAV - STACKING FIX
-   ========================================= */
-
-@media (max-width: 768px) {
-
-  /* Header must sit ABOVE the full-screen overlay */
-  header.nav,
-  .nav {
-    position: relative !important;
-    z-index: 30000 !important;
-  }
-
-  /* Full-screen menu sits below header controls */
-  .mobile-menu {
-    z-index: 20000 !important;
-  }
-
-  /* Logo + hamburger always visible */
-  .nav-logo {
-    position: relative !important;
-    z-index: 30001 !important;
-  }
-
-  .menu-toggle {
-    position: relative !important;
-    z-index: 30002 !important;
-    display: flex !important;
-    width: 64px !important;
-    height: 64px !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  /* Hamburger lines */
-  .menu-toggle span {
-    position: absolute !important;
-    display: block !important;
-    width: 34px !important;
-    height: 3px !important;
-    background: white !important;
-    opacity: 1 !important;
-  }
-
-  /* CLOSED hamburger */
-  .menu-toggle span:nth-child(1) {
-    transform: translateY(-10px) !important;
-  }
-
-  .menu-toggle span:nth-child(2) {
-    transform: translateY(0) !important;
-  }
-
-  .menu-toggle span:nth-child(3) {
-    transform: translateY(10px) !important;
-  }
-
-  /* OPEN X */
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) !important;
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) !important;
-  }
-}
-
-
-@media (max-width: 768px) {
-
-  /* Header itself must NOT create the competing stacking layer */
-  header.nav,
-  .nav {
-    position: relative !important;
-    z-index: auto !important;
-  }
-
-  /* Full-screen menu */
-  .mobile-menu {
-    position: fixed !important;
-    inset: 0 !important;
-
-    width: 100vw !important;
-    height: 100dvh !important;
-
-    background: #050505 !important;
-
-    z-index: 9998 !important;
-  }
-
-  /* Logo and hamburger/X */
-  .nav-logo,
-  .menu-toggle {
-    position: relative !important;
-    z-index: 9999 !important;
-  }
-
-  /* Hamburger */
-  .menu-toggle span {
-    position: absolute !important;
+    left: 7px !important;
+    top: 22px !important;
     width: 34px !important;
     height: 3px !important;
     background: #fff !important;
   }
 
-  .menu-toggle span:nth-child(1) {
-    transform: translateY(-10px) !important;
+  .menu-toggle .hamburger-icon::before,
+  .menu-toggle .hamburger-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 34px;
+    height: 3px;
+    background: #fff;
   }
 
-  .menu-toggle span:nth-child(2) {
-    transform: translateY(0) !important;
-  }
+  .menu-toggle .hamburger-icon::before { top: -10px; }
+  .menu-toggle .hamburger-icon::after  { top: 10px; }
 
-  .menu-toggle span:nth-child(3) {
-    transform: translateY(10px) !important;
-  }
+  /* X is hidden while closed. */
+  .menu-toggle .close-icon { display: none !important; }
 
-  /* X */
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) !important;
-  }
+  /* Open state: hide hamburger and draw a clean X. */
+  .menu-toggle.active .hamburger-icon { display: none !important; }
 
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) !important;
-  }
-}
-
-
-/* ==========================================================
-   MAKOM — MASTER MOBILE OVERRIDE
-   DO NOT ADD MOBILE MENU FIXES BELOW THIS BLOCK
-   ========================================================== */
-
-@media (max-width: 768px) {
-
-  /* ========================================================
-     NAV / STACKING
-     ======================================================== */
-
-  header.nav,
-  .nav {
-    position: relative !important;
-    z-index: auto !important;
-  }
-
-  .desktop-nav {
-    display: none !important;
-  }
-
-  .nav-logo {
-    position: relative !important;
-    z-index: 50002 !important;
-  }
-
-
-  /* ========================================================
-     HAMBURGER BUTTON
-     ======================================================== */
-
-  .menu-toggle {
-    display: flex !important;
-    position: relative !important;
-    z-index: 50003 !important;
-
-    width: 60px !important;
-    height: 60px !important;
-    padding: 0 !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    background: transparent !important;
-    border: 0 !important;
-
-    cursor: pointer !important;
-  }
-
-
-  /* Reset ALL old hamburger rules */
-
-  .menu-toggle span,
-  .menu-toggle.active span {
-    position: absolute !important;
-
+  .menu-toggle.active .close-icon {
     display: block !important;
-
+    position: absolute !important;
+    left: 7px !important;
+    top: 7px !important;
     width: 34px !important;
-    height: 3px !important;
-    min-height: 3px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    background: #ffffff !important;
-
-    opacity: 1 !important;
-
-    transform-origin: center !important;
-
-    transition:
-      transform .3s ease,
-      opacity .3s ease !important;
+    height: 34px !important;
   }
 
-
-  /* CLOSED HAMBURGER */
-
-  .menu-toggle span:nth-child(1) {
-    transform: translateY(-10px) !important;
+  .menu-toggle.active .close-icon::before,
+  .menu-toggle.active .close-icon::after {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 2px;
+    width: 3px;
+    height: 30px;
+    background: #fff;
+    transform-origin: center;
   }
 
-  .menu-toggle span:nth-child(2) {
-    transform: translateY(0) !important;
-  }
+  .menu-toggle.active .close-icon::before { transform: rotate(45deg); }
+  .menu-toggle.active .close-icon::after  { transform: rotate(-45deg); }
 
-  .menu-toggle span:nth-child(3) {
-    transform: translateY(10px) !important;
-  }
-
-
-  /* OPEN X */
-
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) !important;
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) !important;
-  }
-
-
-  /* Kill old generated icon attempts */
-
+  /* No generated decoration on the button itself. */
   .menu-toggle::before,
   .menu-toggle::after {
     content: none !important;
     display: none !important;
   }
 
-
-  /* ========================================================
-     FULL-SCREEN MOBILE MENU
-     ======================================================== */
-
+  /* Full-screen menu overlay. */
   .mobile-menu {
+    display: flex !important;
     position: fixed !important;
-
-    top: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    left: 0 !important;
-
+    inset: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
     height: 100dvh !important;
-
     margin: 0 !important;
-    padding: 0 !important;
-
-    background: #050505 !important;
-
-    display: flex !important;
+    padding: 0 24px !important;
     flex-direction: column !important;
-
     justify-content: center !important;
     align-items: center !important;
-
-    gap: 28px !important;
-
+    gap: 30px !important;
+    background: #050505 !important;
     opacity: 0 !important;
     visibility: hidden !important;
     pointer-events: none !important;
-
-    z-index: 50000 !important;
-
-    transition:
-      opacity .3s ease,
-      visibility .3s ease !important;
+    z-index: 10000 !important;
+    transition: opacity .25s ease, visibility .25s ease !important;
   }
-
-
-  /* MENU OPEN */
 
   .mobile-menu.active {
     opacity: 1 !important;
@@ -5078,333 +4085,42 @@ footer img {
     pointer-events: auto !important;
   }
 
-
-  /* MENU LINKS */
-
   .mobile-menu a {
     display: block !important;
-
-    position: relative !important;
-    z-index: 50001 !important;
-
-    color: #ffffff !important;
-
+    color: #fff !important;
     text-decoration: none !important;
     text-transform: uppercase !important;
-
     font-size: 22px !important;
     font-weight: 700 !important;
-
-    letter-spacing: .08em !important;
     line-height: 1.2 !important;
-
-    opacity: 1 !important;
-    visibility: visible !important;
+    letter-spacing: .08em !important;
   }
 
+  .mobile-menu a:hover,
+  .mobile-menu a:focus-visible { color: #df001b !important; }
 
-  /* ========================================================
-     HERO — MOBILE
-     ======================================================== */
-
+  /* Preserve the compact mobile hero currently shown on the live page. */
   .hero {
     min-height: 0 !important;
     height: auto !important;
-
     display: block !important;
-
     padding: 40px 20px 80px !important;
     margin: 0 !important;
-
     overflow: hidden !important;
   }
-
 
   .hero-inner {
     width: 100% !important;
     max-width: 100% !important;
-
     min-height: 0 !important;
     height: auto !important;
-
     display: flex !important;
     flex-direction: column !important;
-
     justify-content: flex-start !important;
     align-items: center !important;
-
     margin: 0 auto !important;
     padding: 0 !important;
-
     position: relative !important;
-
-    top: auto !important;
-    left: auto !important;
-
     transform: none !important;
-  }
-
-}
-
-
-/* MOBILE MENU — KEEP CLOSE X VISIBLE */
-@media (max-width: 768px) {
-
-  .menu-toggle {
-    z-index: 60000 !important;
-  }
-
-  .menu-toggle.active {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  .menu-toggle.active span {
-    display: block !important;
-    visibility: visible !important;
-  }
-
-  .menu-toggle.active span:nth-child(1) {
-    opacity: 1 !important;
-    transform: rotate(45deg) !important;
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    opacity: 1 !important;
-    transform: rotate(-45deg) !important;
-  }
-}
-
-
-/* ==================================================
-   FINAL MOBILE MENU CLOSE BUTTON FIX
-   DO NOT EDIT HERO
-================================================== */
-
-@media (max-width: 768px) {
-
-  /* Keep toggle above the open menu */
-  .menu-toggle {
-    display: flex !important;
-    position: fixed !important;
-    top: 112px !important;
-    right: 48px !important;
-    width: 36px !important;
-    height: 36px !important;
-    z-index: 999999 !important;
-
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  .menu-toggle span {
-    position: absolute !important;
-    display: block !important;
-    width: 32px !important;
-    height: 3px !important;
-    background: #fff !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    transition: transform .25s ease, opacity .2s ease !important;
-  }
-
-  /* CLOSED — hamburger */
-  .menu-toggle:not(.active) span:nth-child(1) {
-    transform: translateY(-10px) !important;
-  }
-
-  .menu-toggle:not(.active) span:nth-child(2) {
-    transform: translateY(0) !important;
-  }
-
-  .menu-toggle:not(.active) span:nth-child(3) {
-    transform: translateY(10px) !important;
-  }
-
-  /* OPEN — X */
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) !important;
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) !important;
-  }
-}
-
-
-/* ==========================================
-   FINAL MOBILE NAV REPAIR
-   overrides previous fixes — delete nothing
-========================================== */
-
-@media (max-width: 768px) {
-
-  /* Put button back in the header */
-  .menu-toggle {
-    position: absolute !important;
-    top: 50% !important;
-    right: 28px !important;
-    transform: translateY(-50%) !important;
-
-    width: 36px !important;
-    height: 30px !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-
-    opacity: 1 !important;
-    visibility: visible !important;
-    z-index: 10001 !important;
-  }
-
-  /* Reset the three lines */
-  .menu-toggle span {
-    position: static !important;
-    display: block !important;
-
-    width: 32px !important;
-    height: 3px !important;
-    margin: 0 !important;
-
-    background: #fff !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-
-    transform: none !important;
-    transform-origin: center !important;
-  }
-
-  /* When open, turn hamburger into X */
-  .menu-toggle.active {
-    justify-content: center !important;
-  }
-
-  .menu-toggle.active span {
-    position: absolute !important;
-  }
-
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) !important;
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) !important;
-  }
-
-  /* Menu stays below the toggle */
-  .mobile-menu {
-    z-index: 10000 !important;
-  }
-}
-
-
-/* Remove any extra hamburger line */
-.menu-toggle::before,
-.menu-toggle::after {
-    content: none !important;
-    display: none !important;
-}
-
-
-
-/* =====================================================
-   FINAL MOBILE MENU FIX
-   Matches the actual HTML structure
-===================================================== */
-
-@media (max-width: 768px) {
-
-  .menu-toggle {
-    position: absolute !important;
-    top: 50% !important;
-    right: 28px !important;
-    transform: translateY(-50%) !important;
-
-    width: 48px !important;
-    height: 48px !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    background: transparent !important;
-    border: 0 !important;
-    padding: 0 !important;
-
-    color: #fff !important;
-    z-index: 10001 !important;
-
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-
-  /* Completely undo previous span/bar styling */
-  .menu-toggle span {
-    position: static !important;
-    width: auto !important;
-    height: auto !important;
-    margin: 0 !important;
-
-    background: transparent !important;
-
-    transform: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-
-    line-height: 1 !important;
-  }
-
-  /* CLOSED STATE */
-  .menu-toggle .hamburger-icon {
-    display: block !important;
-    font-size: 46px !important;
-    font-weight: 300 !important;
-    color: #fff !important;
-  }
-
-  .menu-toggle .close-icon {
-    display: none !important;
-  }
-
-  /* OPEN STATE */
-  .menu-toggle.active .hamburger-icon {
-    display: none !important;
-  }
-
-  .menu-toggle.active .close-icon {
-    display: block !important;
-    font-size: 52px !important;
-    font-weight: 200 !important;
-    color: #fff !important;
-  }
-
-  /* Keep toggle above menu overlay */
-  .mobile-menu {
-    z-index: 10000 !important;
-  }
-
-  .menu-toggle::before,
-  .menu-toggle::after {
-    content: none !important;
-    display: none !important;
   }
 }
