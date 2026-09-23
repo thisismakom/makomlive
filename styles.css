@@ -4718,3 +4718,60 @@ footer img {
     }
 
 }
+
+
+/* =========================================
+   FINAL HAMBURGER / X OVERRIDE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 6px !important;
+
+    width: 64px !important;
+    height: 64px !important;
+
+    position: relative !important;
+    z-index: 20000 !important;
+
+    background: transparent !important;
+    border: 0 !important;
+  }
+
+  .menu-toggle span {
+    display: block !important;
+    width: 34px !important;
+    height: 3px !important;
+    min-height: 3px !important;
+    background: #fff !important;
+    opacity: 1 !important;
+
+    transform-origin: center !important;
+    transition: transform .3s ease, opacity .3s ease !important;
+  }
+
+  /* OPEN: make a clean X */
+  .menu-toggle.active {
+    gap: 0 !important;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    position: absolute !important;
+    transform: rotate(45deg) !important;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    position: absolute !important;
+    opacity: 0 !important;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    position: absolute !important;
+    transform: rotate(-45deg) !important;
+  }
+}
