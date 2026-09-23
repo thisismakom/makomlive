@@ -4424,3 +4424,53 @@ footer img {
   }
 
 }
+
+
+/* =========================================
+   DEFINITIVE MOBILE MENU X FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* When menu is open, hide all original bars */
+  .menu-toggle.active span {
+    opacity: 0 !important;
+    transform: none !important;
+  }
+
+  /* Make button the positioning container */
+  .menu-toggle {
+    position: relative !important;
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  /* Create the two lines of the X */
+  .menu-toggle.active::before,
+  .menu-toggle.active::after {
+    content: "" !important;
+    position: absolute !important;
+
+    top: 50% !important;
+    left: 50% !important;
+
+    width: 42px !important;
+    height: 3px !important;
+
+    background: #ffffff !important;
+
+    transform-origin: center !important;
+    opacity: 1 !important;
+
+    z-index: 10010 !important;
+  }
+
+  .menu-toggle.active::before {
+    transform: translate(-50%, -50%) rotate(45deg) !important;
+  }
+
+  .menu-toggle.active::after {
+    transform: translate(-50%, -50%) rotate(-45deg) !important;
+  }
+
+}
