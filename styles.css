@@ -2896,3 +2896,152 @@ footer img {
     text-transform: uppercase;
     color: #999;
 }
+
+
+/* ==================================================
+   MAKOM — MOBILE HERO
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        min-height: 100svh;
+        padding: 150px 20px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    /* HERO CONTENT */
+    .hero-inner {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* EYEBROW */
+    .hero-eyebrow {
+        width: 100%;
+        max-width: 330px;
+        margin: 0 auto 26px;
+        padding: 0;
+
+        font-size: 10px;
+        line-height: 1.7;
+        letter-spacing: 0.25em;
+
+        text-align: center;
+        white-space: normal;
+    }
+
+    /* MAIN TITLE */
+    .hero-title {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    /* ENCOUNTER */
+    .hero-title span {
+        display: block;
+
+        font-size: clamp(48px, 14.5vw, 72px);
+        line-height: 0.92;
+        letter-spacing: -0.055em;
+
+        white-space: nowrap;
+        max-width: 100%;
+    }
+
+    /* GOD. */
+    .hero-title em {
+        display: block;
+
+        margin-top: 8px;
+
+        font-size: clamp(72px, 22vw, 110px);
+        line-height: 0.9;
+
+        white-space: nowrap;
+    }
+
+    /* IN PERSON • ONLINE */
+    .hero-access {
+        margin-top: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 16px;
+
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        white-space: nowrap;
+    }
+
+    /* NEXT GATHERING */
+    .hero-cta {
+        margin-top: 48px;
+
+        font-size: 11px;
+        letter-spacing: 0.2em;
+    }
+
+    /* BACKGROUND CIRCLE */
+    .hero::before {
+        width: 82vw;
+        max-width: 420px;
+        aspect-ratio: 1;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/* SMALL PHONES */
+@media (max-width: 390px) {
+
+    .hero {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-title span {
+        font-size: 13.5vw;
+    }
+
+    .hero-title em {
+        font-size: 21vw;
+    }
+
+    .hero-access {
+        gap: 12px;
+        font-size: 10px;
+    }
+
+}
