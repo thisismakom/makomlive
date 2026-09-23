@@ -5145,3 +5145,37 @@ footer img {
   }
 
 }
+
+
+/* MOBILE MENU — KEEP CLOSE X VISIBLE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    z-index: 60000 !important;
+  }
+
+  .menu-toggle.active {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .menu-toggle.active span {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    opacity: 1 !important;
+    transform: rotate(45deg) !important;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    opacity: 1 !important;
+    transform: rotate(-45deg) !important;
+  }
+}
