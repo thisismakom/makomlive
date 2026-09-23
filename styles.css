@@ -4676,3 +4676,45 @@ footer img {
         display: none !important;
     }
 }
+
+
+/* =========================================
+   MAKOM MOBILE HERO — MASTER OVERRIDE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 0 !important;
+        height: auto !important;
+
+        display: block !important;
+
+        padding: 40px 20px 80px !important;
+        margin: 0 !important;
+
+        overflow: hidden;
+    }
+
+    .hero-inner {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        min-height: 0 !important;
+        height: auto !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+    }
+
+}
