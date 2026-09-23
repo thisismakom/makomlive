@@ -2072,3 +2072,117 @@ footer img {
 .makom-footer-bottom p {
     margin: 0 !important;
 }
+
+
+/* ========================================
+   MAKOM HERO — FINAL OVERRIDE
+======================================== */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-inner {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  margin: 0 0 35px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  color: #ffffff;
+}
+
+.hero-title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: clamp(70px, 9vw, 145px) !important;
+  line-height: 0.82 !important;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-title span,
+.hero-title em {
+  display: block;
+}
+
+.hero-title span {
+  color: #e0001b;
+  font-style: normal;
+}
+
+.hero-title em {
+  color: #ffffff;
+  font-style: italic;
+  margin-top: 18px;
+}
+
+.hero-description {
+  margin: 50px auto 0;
+  max-width: 680px;
+  font-size: clamp(16px, 1.3vw, 20px);
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 25px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #e0001b;
+
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-decoration: none;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 100svh;
+    padding: 130px 24px 70px;
+  }
+
+  .hero-inner {
+    width: 100%;
+  }
+
+  .hero-eyebrow {
+    font-size: 10px;
+    margin-bottom: 28px;
+  }
+
+  .hero-title {
+    font-size: clamp(52px, 17vw, 90px) !important;
+    line-height: 0.88 !important;
+  }
+
+  .hero-title em {
+    margin-top: 12px;
+  }
+
+  .hero-description {
+    margin-top: 35px;
+    font-size: 15px;
+    max-width: 420px;
+  }
+
+}
