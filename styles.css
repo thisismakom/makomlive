@@ -4405,10 +4405,11 @@ footer img {
   }
 }
 
-
-/* FIX HAMBURGER X */
-
 @media (max-width: 768px) {
+
+  .menu-toggle span {
+    transform-origin: center !important;
+  }
 
   .menu-toggle.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg) !important;
