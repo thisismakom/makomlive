@@ -4474,3 +4474,68 @@ footer img {
   }
 
 }
+
+
+/* FINAL MOBILE MENU ICON */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 60px !important;
+        height: 60px !important;
+
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+
+        position: relative !important;
+        z-index: 10003 !important;
+    }
+
+    /* Kill ALL previous hamburger span styling */
+    .menu-toggle span {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        background: none !important;
+        transform: none !important;
+        opacity: 1;
+    }
+
+    .hamburger-icon {
+        display: block !important;
+        color: white !important;
+        font-size: 46px !important;
+        font-weight: 300 !important;
+        line-height: 1 !important;
+    }
+
+    .close-icon {
+        display: none !important;
+        color: white !important;
+        font-size: 58px !important;
+        font-weight: 200 !important;
+        line-height: 1 !important;
+    }
+
+    /* OPEN */
+
+    .menu-toggle.active .hamburger-icon {
+        display: none !important;
+    }
+
+    .menu-toggle.active .close-icon {
+        display: block !important;
+    }
+
+    /* Disable old pseudo-element attempts */
+    .menu-toggle::before,
+    .menu-toggle::after {
+        content: none !important;
+        display: none !important;
+    }
+}
