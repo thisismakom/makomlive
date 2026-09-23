@@ -5243,3 +5243,75 @@ footer img {
     transform: rotate(-45deg) !important;
   }
 }
+
+
+/* ==========================================
+   FINAL MOBILE NAV REPAIR
+   overrides previous fixes — delete nothing
+========================================== */
+
+@media (max-width: 768px) {
+
+  /* Put button back in the header */
+  .menu-toggle {
+    position: absolute !important;
+    top: 50% !important;
+    right: 28px !important;
+    transform: translateY(-50%) !important;
+
+    width: 36px !important;
+    height: 30px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 10001 !important;
+  }
+
+  /* Reset the three lines */
+  .menu-toggle span {
+    position: static !important;
+    display: block !important;
+
+    width: 32px !important;
+    height: 3px !important;
+    margin: 0 !important;
+
+    background: #fff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+    transform-origin: center !important;
+  }
+
+  /* When open, turn hamburger into X */
+  .menu-toggle.active {
+    justify-content: center !important;
+  }
+
+  .menu-toggle.active span {
+    position: absolute !important;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) !important;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) !important;
+  }
+
+  /* Menu stays below the toggle */
+  .mobile-menu {
+    z-index: 10000 !important;
+  }
+}
