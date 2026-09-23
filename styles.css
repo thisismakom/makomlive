@@ -5179,3 +5179,67 @@ footer img {
     transform: rotate(-45deg) !important;
   }
 }
+
+
+/* ==================================================
+   FINAL MOBILE MENU CLOSE BUTTON FIX
+   DO NOT EDIT HERO
+================================================== */
+
+@media (max-width: 768px) {
+
+  /* Keep toggle above the open menu */
+  .menu-toggle {
+    display: flex !important;
+    position: fixed !important;
+    top: 112px !important;
+    right: 48px !important;
+    width: 36px !important;
+    height: 36px !important;
+    z-index: 999999 !important;
+
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .menu-toggle span {
+    position: absolute !important;
+    display: block !important;
+    width: 32px !important;
+    height: 3px !important;
+    background: #fff !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: transform .25s ease, opacity .2s ease !important;
+  }
+
+  /* CLOSED — hamburger */
+  .menu-toggle:not(.active) span:nth-child(1) {
+    transform: translateY(-10px) !important;
+  }
+
+  .menu-toggle:not(.active) span:nth-child(2) {
+    transform: translateY(0) !important;
+  }
+
+  .menu-toggle:not(.active) span:nth-child(3) {
+    transform: translateY(10px) !important;
+  }
+
+  /* OPEN — X */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) !important;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) !important;
+  }
+}
