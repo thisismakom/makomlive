@@ -5315,3 +5315,96 @@ footer img {
     z-index: 10000 !important;
   }
 }
+
+
+/* Remove any extra hamburger line */
+.menu-toggle::before,
+.menu-toggle::after {
+    content: none !important;
+    display: none !important;
+}
+
+
+
+/* =====================================================
+   FINAL MOBILE MENU FIX
+   Matches the actual HTML structure
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    position: absolute !important;
+    top: 50% !important;
+    right: 28px !important;
+    transform: translateY(-50%) !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+
+    color: #fff !important;
+    z-index: 10001 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Completely undo previous span/bar styling */
+  .menu-toggle span {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+
+    background: transparent !important;
+
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    line-height: 1 !important;
+  }
+
+  /* CLOSED STATE */
+  .menu-toggle .hamburger-icon {
+    display: block !important;
+    font-size: 46px !important;
+    font-weight: 300 !important;
+    color: #fff !important;
+  }
+
+  .menu-toggle .close-icon {
+    display: none !important;
+  }
+
+  /* OPEN STATE */
+  .menu-toggle.active .hamburger-icon {
+    display: none !important;
+  }
+
+  .menu-toggle.active .close-icon {
+    display: block !important;
+    font-size: 52px !important;
+    font-weight: 200 !important;
+    color: #fff !important;
+  }
+
+  /* Keep toggle above menu overlay */
+  .mobile-menu {
+    z-index: 10000 !important;
+  }
+
+  .menu-toggle::before,
+  .menu-toggle::after {
+    content: none !important;
+    display: none !important;
+  }
+}
