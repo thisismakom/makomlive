@@ -4404,3 +4404,22 @@ footer img {
     transform: translateY(-9px) rotate(-45deg) !important;
   }
 }
+
+
+/* FIX HAMBURGER X */
+
+@media (max-width: 768px) {
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg) !important;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg) !important;
+  }
+
+}
