@@ -4539,3 +4539,37 @@ footer img {
         display: none !important;
     }
 }
+
+
+/* =========================================
+   MOBILE HERO POSITION FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto !important;
+        height: auto !important;
+        padding-top: 180px !important;
+        padding-bottom: 100px !important;
+    }
+
+    .hero-inner {
+        min-height: auto !important;
+        height: auto !important;
+        justify-content: flex-start !important;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+}
+
+/* DESKTOP NAV DEBUG / FIX */
+@media (min-width: 769px) {
+
+    .mobile-menu,
+    .menu-toggle {
+        display: none !important;
+    }
+
+}
