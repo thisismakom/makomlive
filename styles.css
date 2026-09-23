@@ -4277,7 +4277,6 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 
 /* Divider between consecutive dark sections */
-.statement::before,
 .gathering::before {
     content: "";
     position: absolute;
@@ -4286,6 +4285,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     right: 6%;
     height: 1px;
     background: rgba(255, 255, 255, 0.14);
+}
 }
 
 
@@ -4317,12 +4317,12 @@ html, body { max-width: 100%; overflow-x: hidden; }
         padding-bottom: 75px;
     }
 
-    .come::before,
-    .vision::before,
-    .statement::before,
-    .gathering::before {
-        left: 7%;
-        right: 7%;
+.come::before,
+.vision::before,
+.gathering::before {
+    left: 7%;
+    right: 7%;
+}
     }
 }
 
