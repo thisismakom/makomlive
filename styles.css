@@ -4328,48 +4328,70 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 
 /* =========================================
-   MAKOM — MOBILE MENU FINAL FIX
+   MAKOM — MOBILE MENU + CLOSE BUTTON FIX
    ========================================= */
 
 @media (max-width: 768px) {
 
-    /* Keep header above full-screen menu */
+    /* Header stays above the opened menu */
     .nav {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1001;
+        z-index: 10000;
     }
 
-    /* Logo must remain visible */
+    /* Logo remains visible */
     .nav-logo {
         position: relative;
-        z-index: 1003;
+        z-index: 10002;
     }
 
-    /* Menu button must remain visible */
+    /* Toggle remains visible */
     .menu-toggle {
         position: relative;
-        z-index: 1003;
+        z-index: 10002;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        background: transparent;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
     }
 
-    /* Full-screen menu sits below controls */
-    .mobile-menu {
-        z-index: 1000;
+    /* Closed state */
+    .hamburger-icon {
+        display: block;
+        color: #fff;
+        font-size: 46px;
+        line-height: 1;
     }
 
-    /* Hide hamburger when menu is open */
-    .menu-toggle.active .hamburger-icon {
+    .close-icon {
         display: none;
     }
 
-    /* Show X */
+    /* OPEN STATE */
+
+    .menu-toggle.active .hamburger-icon {
+        display: none !important;
+    }
+
     .menu-toggle.active .close-icon {
-        display: block;
+        display: block !important;
         color: #fff;
-        font-size: 42px;
-        font-weight: 300;
+        font-size: 48px;
+        font-family: Arial, sans-serif;
+        font-weight: 200;
         line-height: 1;
+    }
+
+    /* Menu background stays underneath header controls */
+    .mobile-menu {
+        z-index: 9999;
     }
 }
