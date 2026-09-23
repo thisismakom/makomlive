@@ -2582,3 +2582,26 @@ footer img {
         margin-top: 30px;
     }
 }
+
+
+/* NEXT MAKOM — FINAL SPACING REFINEMENT */
+
+.gathering-title {
+    margin-bottom: 50px !important;
+}
+
+.gathering-details {
+    margin-top: 0 !important;
+}
+
+.gathering-values {
+    margin-top: 30px !important;
+}
+
+.gathering-cta {
+    margin-top: 28px !important;
+}
+
+.gathering-title em {
+    font-size: clamp(38px, 4.8vw, 72px) !important;
+}
