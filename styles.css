@@ -6157,3 +6157,76 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }
+/* MAKOM CONNECT — SUCCESS MESSAGE */
+
+.connect-success {
+  width: 100%;
+  padding: 28px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.connect-success span {
+  display: block;
+  margin-bottom: 12px;
+
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+
+  color: #e4001b;
+}
+
+.connect-success p {
+  margin: 0;
+
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+
+  color: #050505;
+}
+
+/* =========================================
+   MAKOM — FINAL DISPLAY HEADING SYSTEM
+   KEEP THIS AT THE BOTTOM OF THE CSS
+========================================= */
+
+/* DESKTOP */
+@media (min-width: 769px) {
+
+  #heart h2,
+  .come-heading h2,
+  .vision-heading h2,
+  .pillars-header h2,
+  .statement-heading h2,
+  .next-top h2,
+  .connect-heading h2 {
+    font-family: Montserrat, Arial, sans-serif !important;
+    font-size: clamp(72px, 7vw, 120px) !important;
+    font-weight: 800 !important;
+    line-height: 0.84 !important;
+    letter-spacing: -0.06em !important;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  #heart h2,
+  .come-heading h2,
+  .vision-heading h2,
+  .pillars-header h2,
+  .statement-heading h2,
+  .next-top h2,
+  .connect-heading h2 {
+    font-family: Montserrat, Arial, sans-serif !important;
+    font-size: clamp(52px, 15vw, 72px) !important;
+    font-weight: 800 !important;
+    line-height: 0.86 !important;
+    letter-spacing: -0.055em !important;
+  }
+
+}
