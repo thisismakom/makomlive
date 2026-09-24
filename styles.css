@@ -188,49 +188,50 @@
 .heart {
   background: #f4f2ed;
   color: #050505;
-  padding: 140px 7vw 150px;
+  padding: 110px 7vw 130px;
 }
 
 .heart-layout {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  gap: 8vw;
-  align-items: start;
+  display: block;
 }
 
-.heart-label {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-top: 14px;
+/* THE HEART label */
+.heart .section-label {
+  margin: 0 0 65px;
+  color: rgba(0, 0, 0, 0.32);
   font-family: Montserrat, Arial, sans-serif;
-  font-size: 11px;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
 }
 
-.heart-label span:first-child {
-  color: #c90019;
+/* Main two-column area */
+.heart-content {
+  display: grid;
+  grid-template-columns: minmax(420px, 0.9fr) minmax(420px, 1.1fr);
+  column-gap: clamp(70px, 9vw, 170px);
+  align-items: start;
 }
 
 .heart-content h2 {
-  margin: 0 0 60px;
+  margin: 0;
   font-family: Montserrat, Arial, sans-serif;
-  font-size: clamp(72px, 8vw, 145px);
+  font-size: clamp(82px, 8vw, 145px);
   font-weight: 800;
   line-height: 0.84;
   letter-spacing: -0.06em;
 }
 
 .heart-copy {
-  max-width: 680px;
+  max-width: 600px;
+  padding-top: 5px;
   font-family: Montserrat, Arial, sans-serif;
-  font-size: clamp(17px, 1.25vw, 21px);
-  line-height: 1.8;
+  font-size: clamp(17px, 1.15vw, 20px);
+  line-height: 1.75;
 }
 
 .heart-copy p {
@@ -246,36 +247,37 @@
 }
 
 .heart-emphasis {
-  margin: 48px 0 !important;
+  margin: 45px 0 !important;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(38px, 4vw, 64px);
+  font-size: clamp(42px, 4vw, 64px);
   font-style: italic;
   line-height: 1.05;
 }
 
 .heart-closing {
-  margin-top: 50px !important;
+  margin-top: 45px !important;
   padding-top: 28px;
   border-top: 1px solid rgba(5, 5, 5, 0.18);
   font-weight: 600;
 }
 
 
-/* THE HEART — MOBILE */
+/* ==========================================
+   THE HEART — MOBILE
+   ========================================== */
 
 @media (max-width: 768px) {
 
   .heart {
-    padding: 95px 24px 105px;
+    padding: 80px 24px 95px;
   }
 
-  .heart-layout {
-    grid-template-columns: 1fr;
-    gap: 50px;
+  .heart .section-label {
+    margin-bottom: 40px;
   }
 
-  .heart-label {
-    padding-top: 0;
+  .heart-content {
+    display: block;
   }
 
   .heart-content h2 {
@@ -284,6 +286,8 @@
   }
 
   .heart-copy {
+    max-width: 100%;
+    padding-top: 0;
     font-size: 16px;
     line-height: 1.75;
   }
@@ -297,7 +301,6 @@
     font-size: clamp(38px, 12vw, 55px);
     margin: 40px 0 !important;
   }
-
 }
 /* =========================================
    02 / THE GATHERING
@@ -5481,4 +5484,207 @@ html, body { max-width: 100%; overflow-x: hidden; }
         max-width: 100%;
         font-size: 1rem;
     }
+}
+
+
+.pillar-grid a {
+    color: #e6001a;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.pillar-grid a:hover {
+    opacity: 0.7;
+}
+
+#heart .heart-emphasis {
+    white-space: nowrap;
+    font-size: clamp(3rem, 4.2vw, 5rem) !important;
+    line-height: 1;
+}
+
+
+/* ========================================
+   COME AS YOU ARE — REFINED
+======================================== */
+
+.come {
+    padding: 70px 5% 110px;
+}
+
+.come-inner {
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+}
+
+.come .section-label {
+    margin-bottom: 65px;
+}
+
+/* Main layout */
+.come-layout {
+    display: grid;
+    grid-template-columns: minmax(500px, 0.9fr) minmax(500px, 1fr);
+    gap: clamp(90px, 10vw, 180px);
+    align-items: start;
+}
+
+/* THERE IS ROOM FOR YOU */
+.come-heading h2 {
+    margin: 0;
+    font-size: clamp(6rem, 8vw, 9rem);
+    line-height: 0.80;
+    letter-spacing: -0.065em;
+    font-weight: 800;
+}
+
+/* ROOM */
+.come-heading h2 em {
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #e6001a;
+    letter-spacing: -0.04em;
+}
+
+/* Right column */
+.come-content {
+    width: 100%;
+    max-width: 570px;
+    padding-top: 15px;
+}
+
+/* Main statement */
+.come-lead {
+    max-width: 520px;
+    margin: 0 0 42px;
+
+    font-size: clamp(2rem, 2.5vw, 2.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    font-weight: 700;
+}
+
+/* Body paragraphs */
+.come-content > p:not(.come-lead) {
+    max-width: 520px;
+    margin: 0 0 28px;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Invitation */
+.come-invitation {
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.come-invitation strong {
+    color: #e6001a;
+}
+
+
+/* TABLET */
+@media (max-width: 1000px) {
+
+    .come {
+        padding: 65px 7% 90px;
+    }
+
+    .come-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .come-heading h2 {
+        font-size: clamp(5rem, 11vw, 7.5rem);
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .come {
+        padding: 50px 7% 70px;
+    }
+
+    .come .section-label {
+        margin-bottom: 40px;
+    }
+
+    .come-layout {
+        display: block;
+    }
+
+    .come-heading h2 {
+        font-size: clamp(4.5rem, 20vw, 6.5rem);
+        margin-bottom: 55px;
+    }
+
+    .come-content {
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    .come-lead {
+        max-width: 100%;
+        font-size: 2rem;
+        line-height: 1.1;
+        margin-bottom: 30px;
+    }
+
+    .come-content > p:not(.come-lead) {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .come-invitation {
+        margin-top: 35px;
+    }
+}
+
+#heart .section-label {
+    margin-bottom: 35px;
+}
+
+#heart .heart-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    transform: translateY(0);
+}
+
+/* ========================================
+   THE POSTURE — REMOVE STRAY DIVIDER LINES
+======================================== */
+
+.statement,
+.statement-inner,
+.statement-layout,
+.statement-heading,
+.statement-posture {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.statement::before,
+.statement::after,
+.statement-inner::before,
+.statement-inner::after {
+    display: none !important;
 }
