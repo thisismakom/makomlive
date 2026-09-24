@@ -4318,3 +4318,154 @@ html, body { max-width: 100%; overflow-x: hidden; }
         right: 7%;
     }
 }
+
+
+/* ========================================
+   THE POSTURE — FINAL REFINEMENT
+========================================= */
+
+.statement {
+  padding: 110px 6%;
+}
+
+.statement-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.statement-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 100px;
+  align-items: center;
+}
+
+/* DRAW NEAR */
+.statement-heading h2 {
+  margin: 20px 0 0;
+  font-size: clamp(80px, 9vw, 150px);
+  line-height: 0.88;
+  letter-spacing: -0.06em;
+  font-weight: 700;
+}
+
+.statement-heading h2 span {
+  color: #e60012;
+}
+
+/* Supporting copy */
+.statement .statement-intro {
+  margin-top: 28px;
+  max-width: 600px;
+
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+
+  color: rgba(255, 255, 255, 0.68);
+}
+
+/* BE STILL / WORSHIP / PRAY / ABIDE */
+.statement-posture h3 {
+  margin: 0;
+
+  font-size: clamp(42px, 4vw, 68px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.statement-posture h3 span {
+  color: #e60012;
+}
+
+/* Divider */
+.statement-line {
+  width: 100%;
+  height: 1px;
+  margin: 55px 0 34px;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Bottom note */
+.statement-note {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* ========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .statement {
+    padding: 90px 6%;
+  }
+
+  .statement-layout {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .statement-heading h2 {
+    font-size: clamp(72px, 14vw, 120px);
+  }
+
+  .statement-posture {
+    max-width: 650px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .statement {
+    padding: 72px 24px;
+  }
+
+  .statement-layout {
+    gap: 55px;
+  }
+
+  .statement-heading h2 {
+    margin-top: 16px;
+    font-size: clamp(64px, 20vw, 92px);
+    line-height: 0.88;
+  }
+
+  .statement .statement-intro {
+    margin-top: 24px;
+    max-width: 100%;
+
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+
+  .statement-posture h3 {
+    font-size: clamp(38px, 12vw, 54px);
+    line-height: 1.02;
+  }
+
+  .statement-line {
+    margin: 38px 0 26px;
+  }
+
+  .statement-note {
+    font-size: 14px;
+  }
+
+}
