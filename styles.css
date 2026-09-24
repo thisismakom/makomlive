@@ -5010,3 +5010,75 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }
+
+
+/* ========================================
+   EXPERIENCE — FINAL REFINEMENT
+======================================== */
+
+/* Make MAKE. ROOM. larger */
+.pillars-header h2 {
+    font-size: clamp(6rem, 9vw, 10rem);
+    line-height: 0.78;
+    letter-spacing: -0.06em;
+    margin-top: 28px;
+    margin-bottom: 42px;
+}
+
+.pillars-header h2 em {
+    display: block;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Keep description comfortably below headline */
+.pillars-header > p {
+    margin-top: 0;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+
+.gathering-title span {
+    display: block;
+    font-size: clamp(6rem, 8vw, 9rem);
+    line-height: 0.85;
+    letter-spacing: -0.055em;
+}
+
+.gathering-title em {
+    display: block;
+    margin-top: 18px;
+    font-size: clamp(3rem, 4.5vw, 5.5rem);
+    line-height: 0.95;
+}
+/* REMOVE EXTRA / DOUBLE DIVIDER BELOW EXPERIENCE */
+
+.pillars {
+    border-bottom: none !important;
+}
+
+.pillar-grid {
+    border-bottom: none !important;
+}
+
+/* Keep only ONE subtle closing line */
+.pillar-grid article {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .pillars-header h2 {
+        font-size: clamp(4.5rem, 20vw, 7rem);
+        line-height: 0.8;
+        margin-bottom: 30px;
+    }
+
+}
+
+.pillars {
+    padding-top: 130px;
+}
