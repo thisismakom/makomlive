@@ -574,7 +574,7 @@ THE POSTURE
   <a href="#gatherings">The Experience</a>
   <a href="#next-gathering" class="nav-button">Next MAKOM</a>
   <a href="prayer.html">Request Prayer</a>
-  <a href="#connect">Connectt</a>
+  <a href="#connect">Connect</a>
     </nav>
 
   </div>
@@ -598,29 +598,97 @@ THE POSTURE
 </footer>
 
 
-  <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
+
+    /* ========================================
+       MOBILE MENU
+    ======================================== */
 
     const menuToggle = document.querySelector(".menu-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
 
-    if (!menuToggle || !mobileMenu) return;
+    if (menuToggle && mobileMenu) {
 
-    menuToggle.addEventListener("click", function () {
-        menuToggle.classList.toggle("active");
-        mobileMenu.classList.toggle("active");
+        menuToggle.addEventListener("click", function () {
+            menuToggle.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
 
-        const isOpen = mobileMenu.classList.contains("active");
-        menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
-
-    mobileMenu.querySelectorAll("a").forEach(function (link) {
-        link.addEventListener("click", function () {
-            menuToggle.classList.remove("active");
-            mobileMenu.classList.remove("active");
-            menuToggle.setAttribute("aria-expanded", "false");
+            const isOpen = mobileMenu.classList.contains("active");
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
         });
-    });
+
+        mobileMenu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                menuToggle.classList.remove("active");
+                mobileMenu.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+    }
+
+
+    /* ========================================
+       MAKOM CONNECT FORM
+    ======================================== */
+
+    const form = document.querySelector(".connect-form");
+
+    if (form) {
+
+        form.addEventListener("submit", async function (event) {
+
+            event.preventDefault();
+
+            const button = form.querySelector('button[type="submit"]');
+            const originalButton = button.innerHTML;
+
+            button.disabled = true;
+            button.innerHTML = "SENDING...";
+
+            try {
+
+                const formData = new FormData(form);
+
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error("Subscription failed");
+                }
+
+                form.innerHTML = `
+                    <div class="connect-success">
+                        <span>ALMOST THERE.</span>
+
+                        <p>
+                            Check your email to confirm your subscription
+                            and stay connected with MAKOM.
+                        </p>
+                    </div>
+                `;
+
+            } catch (error) {
+
+                button.disabled = false;
+                button.innerHTML = originalButton;
+
+                alert("Something went wrong. Please try again.");
+
+            }
+
+        });
+
+    }
 
 });
 </script>
