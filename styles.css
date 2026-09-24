@@ -6022,3 +6022,101 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .pillar-grid {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
+
+
+/* THE GATHERING — FINAL GRID LINES */
+
+.pillar-grid {
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.pillar-grid article {
+  border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.pillar-grid article:last-child {
+  border-right: 0 !important;
+}
+
+/* ==========================================
+   OUR VISION — TYPOGRAPHY UNIFICATION
+   ========================================== */
+
+.vision {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+/* Main statement */
+.vision-copy,
+.vision-copy p,
+.vision-content,
+.vision-content p {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+/* Large opening paragraph */
+.vision-copy p:first-child,
+.vision-content p:first-child {
+  font-size: clamp(22px, 1.7vw, 30px);
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* Supporting paragraph */
+.vision-copy p:not(:first-child),
+.vision-content p:not(:first-child) {
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+/* Keep ENCOUNTER as the intentional editorial contrast */
+.vision h2 em {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+}
+
+/* COME AS YOU ARE — FINAL SPACING */
+
+.come-layout {
+  margin-top: 55px;
+  grid-template-columns: 0.95fr 1.05fr;
+  column-gap: clamp(70px, 9vw, 150px);
+}
+
+.come-content {
+  max-width: 620px;
+}
+
+/* ==========================================
+   OUR VISION — FINAL SPACING + TYPE
+   ========================================== */
+
+.vision-layout {
+  margin-top: 55px !important;
+  column-gap: clamp(70px, 7vw, 120px) !important;
+  align-items: start;
+}
+
+.vision-copy {
+  max-width: 600px;
+}
+
+/* Main vision statement */
+.vision-copy > p:first-child {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: clamp(22px, 1.55vw, 27px);
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+}
+
+/* Supporting copy */
+.vision-copy > p:not(:first-child) {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: clamp(16px, 1.05vw, 18px);
+  line-height: 1.75;
+  font-weight: 400;
+}
