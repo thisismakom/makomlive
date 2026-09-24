@@ -486,28 +486,34 @@
           </p>
 
           <form
-            class="connect-form"
-            onsubmit="event.preventDefault(); alert('Form ready to connect to your email service.');"
-          >
+    action="https://app.kit.com/forms/9956419/subscriptions"
+    method="post"
+    class="connect-form"
+    data-sv-form="9956419"
+    data-uid="b25d362335"
+>
 
-            <input
-              type="text"
-              placeholder="YOUR NAME"
-              aria-label="Your name"
-            >
+    <input
+        type="text"
+        name="fields[first_name]"
+        placeholder="YOUR FIRST NAME"
+        aria-label="Your first name"
+        required
+    >
 
-            <input
-              type="email"
-              placeholder="YOUR EMAIL ADDRESS"
-              aria-label="Your email address"
-              required
-            >
+    <input
+        type="email"
+        name="email_address"
+        placeholder="YOUR EMAIL ADDRESS"
+        aria-label="Your email address"
+        required
+    >
 
-            <button type="submit">
-              KEEP ME UPDATED <span>→</span>
-            </button>
+    <button type="submit">
+        KEEP ME UPDATED <span>→</span>
+    </button>
 
-          </form>
+</form>
 
           <div class="connect-social">
 
