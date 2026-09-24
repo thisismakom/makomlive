@@ -4154,34 +4154,30 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 @media (max-width: 768px) {
 
-    /* Keep header above hero */
     .nav {
         position: absolute !important;
         top: 0 !important;
         left: 0 !important;
         width: 100% !important;
         height: 150px !important;
-        z-index: 1000 !important;
+        z-index: 10000 !important;
     }
 
-    /* Logo position */
     .nav-logo {
         position: absolute !important;
         top: 55px !important;
         left: 40px !important;
-        z-index: 1001 !important;
+        z-index: 10002 !important;
     }
 
-    /* Hamburger position */
     .menu-toggle {
         display: block !important;
         position: absolute !important;
         top: 60px !important;
         right: 40px !important;
-        z-index: 1002 !important;
+        z-index: 10003 !important;
     }
 
-    /* Give hero enough room below header */
     .hero {
         min-height: 100vh !important;
         padding-top: 230px !important;
@@ -4286,8 +4282,6 @@ html, body { max-width: 100%; overflow-x: hidden; }
     height: 1px;
     background: rgba(255, 255, 255, 0.14);
 }
-}
-
 
 /* ---------------------------------
    CONNECT
@@ -4317,13 +4311,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
         padding-bottom: 75px;
     }
 
-.come::before,
-.vision::before,
-.gathering::before {
-    left: 7%;
-    right: 7%;
-}
+    .come::before,
+    .vision::before,
+    .gathering::before {
+        left: 7%;
+        right: 7%;
     }
 }
-
-
