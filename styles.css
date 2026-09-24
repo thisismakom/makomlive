@@ -5082,3 +5082,403 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .pillars {
     padding-top: 130px;
 }
+
+
+/* ========================================
+   THE HEART — REFINED LAYOUT
+======================================== */
+
+#heart {
+    padding: 70px 7% 110px;
+}
+
+#heart .heart-layout {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* THE HEART label */
+#heart .section-label {
+    margin: 0 0 45px;
+}
+
+/* Heading + copy side by side */
+#heart .heart-content {
+    display: grid;
+    grid-template-columns: minmax(420px, 0.9fr) minmax(420px, 1fr);
+    gap: clamp(70px, 9vw, 160px);
+    align-items: start;
+}
+
+/* LIFE IS LOUD */
+#heart h2 {
+    margin: 0;
+    font-size: clamp(6rem, 9vw, 10rem);
+    line-height: 0.82;
+    letter-spacing: -0.07em;
+    font-weight: 800;
+}
+
+/* Right-side copy */
+#heart .heart-copy {
+    max-width: 580px;
+    padding-top: 12px;
+}
+
+#heart .heart-copy p {
+    margin: 0 0 28px;
+    font-size: 1.15rem;
+    line-height: 1.65;
+}
+
+/* SCHEDULES... */
+#heart .heart-noise {
+    font-size: 0.82rem !important;
+    line-height: 1.7 !important;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+/* WE NEED ROOM */
+#heart .heart-emphasis {
+    margin: 42px 0 35px !important;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: clamp(2.7rem, 4vw, 4.5rem) !important;
+    line-height: 1;
+    letter-spacing: -0.035em;
+}
+
+/* Final statement */
+#heart .heart-closing {
+    margin-top: 40px !important;
+    padding-top: 28px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    #heart {
+        padding: 65px 7% 90px;
+    }
+
+    #heart .heart-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+    }
+
+    #heart h2 {
+        font-size: clamp(5rem, 11vw, 8rem);
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    #heart {
+        padding: 50px 7% 70px;
+    }
+
+    #heart .section-label {
+        margin-bottom: 35px;
+    }
+
+    #heart .heart-content {
+        display: block;
+    }
+
+    #heart h2 {
+        font-size: clamp(4.8rem, 22vw, 7rem);
+        margin-bottom: 50px;
+    }
+
+    #heart .heart-copy {
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    #heart .heart-copy p {
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+
+    #heart .heart-emphasis {
+        font-size: 2.8rem !important;
+        margin: 35px 0 30px !important;
+    }
+}
+
+/* ========================================
+   THE HEART — REFINED LAYOUT
+======================================== */
+
+#heart {
+    padding: 70px 7% 110px;
+}
+
+#heart .heart-layout {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* THE HEART label */
+#heart .section-label {
+    margin: 0 0 45px;
+}
+
+/* Heading + copy side by side */
+#heart .heart-content {
+    display: grid;
+    grid-template-columns: minmax(420px, 0.9fr) minmax(420px, 1fr);
+    gap: clamp(70px, 9vw, 160px);
+    align-items: start;
+}
+
+/* LIFE IS LOUD */
+#heart h2 {
+    margin: 0;
+    font-size: clamp(6rem, 9vw, 10rem);
+    line-height: 0.82;
+    letter-spacing: -0.07em;
+    font-weight: 800;
+}
+
+/* Right-side copy */
+#heart .heart-copy {
+    max-width: 580px;
+    padding-top: 12px;
+}
+
+#heart .heart-copy p {
+    margin: 0 0 28px;
+    font-size: 1.15rem;
+    line-height: 1.65;
+}
+
+/* SCHEDULES... */
+#heart .heart-noise {
+    font-size: 0.82rem !important;
+    line-height: 1.7 !important;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+/* WE NEED ROOM */
+#heart .heart-emphasis {
+    margin: 42px 0 35px !important;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: clamp(2.7rem, 4vw, 4.5rem) !important;
+    line-height: 1;
+    letter-spacing: -0.035em;
+}
+
+/* Final statement */
+#heart .heart-closing {
+    margin-top: 40px !important;
+    padding-top: 28px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    #heart {
+        padding: 65px 7% 90px;
+    }
+
+    #heart .heart-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+    }
+
+    #heart h2 {
+        font-size: clamp(5rem, 11vw, 8rem);
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    #heart {
+        padding: 50px 7% 70px;
+    }
+
+    #heart .section-label {
+        margin-bottom: 35px;
+    }
+
+    #heart .heart-content {
+        display: block;
+    }
+
+    #heart h2 {
+        font-size: clamp(4.8rem, 22vw, 7rem);
+        margin-bottom: 50px;
+    }
+
+    #heart .heart-copy {
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    #heart .heart-copy p {
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+
+    #heart .heart-emphasis {
+        font-size: 2.8rem !important;
+        margin: 35px 0 30px !important;
+    }
+}
+
+/* ========================================
+   COME AS YOU ARE — REFINED
+======================================== */
+
+#come-as-you-are {
+    padding: 70px 6% 100px;
+}
+
+#come-as-you-are .section-label {
+    margin-bottom: 65px;
+}
+
+/* Main two-column layout */
+#come-as-you-are .come-layout {
+    display: grid;
+    grid-template-columns: minmax(480px, 0.9fr) minmax(420px, 1fr);
+    gap: clamp(100px, 11vw, 190px);
+    align-items: start;
+
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+/* THERE IS ROOM FOR YOU */
+#come-as-you-are h2 {
+    margin: 0;
+    font-size: clamp(6rem, 8vw, 9rem);
+    line-height: 0.8;
+    letter-spacing: -0.065em;
+}
+
+/* ROOM */
+#come-as-you-are h2 em {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #e6001a;
+    letter-spacing: -0.04em;
+}
+
+/* Right column */
+#come-as-you-are .come-copy {
+    max-width: 500px;
+    padding-top: 20px;
+}
+
+/* You don't have to have everything figured out */
+#come-as-you-are .come-copy h3 {
+    max-width: 390px;
+    margin: 0 0 38px;
+
+    font-size: clamp(2rem, 2.6vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+/* Body copy */
+#come-as-you-are .come-copy p {
+    max-width: 430px;
+    margin: 0 0 28px;
+
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    #come-as-you-are {
+        padding: 65px 7% 85px;
+    }
+
+    #come-as-you-are .come-layout {
+        grid-template-columns: 1fr 0.8fr;
+        gap: 60px;
+    }
+
+    #come-as-you-are h2 {
+        font-size: clamp(5rem, 11vw, 7.5rem);
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    #come-as-you-are {
+        padding: 50px 7% 70px;
+    }
+
+    #come-as-you-are .section-label {
+        margin-bottom: 40px;
+    }
+
+    #come-as-you-are .come-layout {
+        display: block;
+    }
+
+    #come-as-you-are h2 {
+        font-size: clamp(4.5rem, 20vw, 6.5rem);
+        margin-bottom: 55px;
+    }
+
+    #come-as-you-are .come-copy {
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    #come-as-you-are .come-copy h3 {
+        max-width: 100%;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    #come-as-you-are .come-copy p {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+}
