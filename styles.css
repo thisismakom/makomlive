@@ -6230,3 +6230,53 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }
+
+
+.next-top h2 {
+  margin: 0;
+  font-size: clamp(72px, 7vw, 120px);
+  line-height: 0.84;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   MOBILE — REDUCE SECTION TOP SPACING
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* OUR VISION */
+  .vision {
+    padding-top: 75px !important;
+    padding-bottom: 90px !important;
+    min-height: auto;
+  }
+
+  .vision .section-label {
+    margin-bottom: 45px !important;
+  }
+
+  /* THE POSTURE */
+  .statement {
+    padding-top: 75px !important;
+    padding-bottom: 90px !important;
+    min-height: auto;
+  }
+
+  .statement .section-label {
+    margin-bottom: 50px !important;
+  }
+
+  /* CONNECT */
+  .connect {
+    padding-top: 75px !important;
+    padding-bottom: 90px !important;
+  }
+
+  .connect .section-label {
+    margin-bottom: 45px !important;
+  }
+
+}
