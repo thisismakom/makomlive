@@ -4469,3 +4469,544 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }
+
+
+/* =========================================================
+   MAKOM — EXPERIENCE → POSTURE → GATHER FLOW
+   ========================================================= */
+
+/* Shared rhythm */
+#ggatherings,
+.statement,
+#next-gathering {
+  position: relative;
+}
+
+/* -----------------------------------------
+   01 — MAKE ROOM
+----------------------------------------- */
+
+#ggatherings {
+  padding-top: 90px;
+  padding-bottom: 0;
+}
+
+#ggatherings .pillars-header {
+  padding-bottom: 65px;
+}
+
+#ggatherings .section-label {
+  margin-bottom: 38px;
+}
+
+
+/* -----------------------------------------
+   02 — DRAW NEAR
+----------------------------------------- */
+
+.statement {
+  min-height: auto !important;
+  padding: 110px 0 115px !important;
+  border-top: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.statement-inner {
+  width: min(88%, 1500px);
+  margin: 0 auto;
+}
+
+.statement .section-label {
+  margin-bottom: 65px;
+}
+
+.statement-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.75fr;
+  gap: clamp(80px, 12vw, 220px);
+  align-items: center;
+}
+
+/* DRAW NEAR */
+
+.statement-heading h2 {
+  margin: 0;
+  font-size: clamp(78px, 9vw, 150px);
+  line-height: 0.78;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+}
+
+.statement-heading h2 span {
+  display: block;
+  color: #ed001c;
+}
+
+.statement-intro {
+  max-width: 610px;
+  margin-top: 38px;
+
+  font-size: 18px;
+  line-height: 1.65;
+  color: #bdbdbd;
+}
+
+
+/* Posture list */
+
+.statement-posture {
+  max-width: 500px;
+  width: 100%;
+}
+
+.statement-posture h3 {
+  margin: 0;
+
+  font-size: clamp(43px, 4.4vw, 70px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+}
+
+.statement-posture h3 span {
+  color: #ed001c;
+}
+
+.statement-line {
+  width: 100%;
+  height: 1px;
+  margin: 50px 0 30px;
+  background: #303030;
+}
+
+.statement-note {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+  color: #888;
+}
+
+
+/* -----------------------------------------
+   03 — GATHER
+----------------------------------------- */
+
+#next-gathering {
+  min-height: auto !important;
+  padding: 90px 0 105px !important;
+}
+
+#next-gathering .section-marker {
+  width: min(94%, 1680px);
+  margin: 0 auto 65px;
+}
+
+.gathering-inner {
+  width: min(78%, 1050px);
+  margin: 0 auto;
+}
+
+.gathering-title {
+  margin: 0 0 55px;
+  text-align: center;
+}
+
+.gathering-title span {
+  display: block;
+
+  font-size: clamp(65px, 7vw, 112px);
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+}
+
+.gathering-title em {
+  display: block;
+  margin-top: 12px;
+
+  color: #ed001c;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 4vw, 65px);
+  line-height: 1;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* -----------------------------------------
+   TABLET
+----------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .statement {
+    padding: 85px 0 90px !important;
+  }
+
+  .statement-layout {
+    grid-template-columns: 1fr;
+    gap: 75px;
+  }
+
+  .statement-posture {
+    max-width: 600px;
+  }
+
+  #next-gathering {
+    padding: 80px 0 90px !important;
+  }
+
+  .gathering-inner {
+    width: 88%;
+  }
+}
+
+
+/* -----------------------------------------
+   MOBILE
+----------------------------------------- */
+
+@media (max-width: 600px) {
+
+  #ggatherings {
+    padding-top: 65px;
+  }
+
+  #ggatherings .pillars-header {
+    padding-bottom: 45px;
+  }
+
+  .statement {
+    padding: 70px 0 75px !important;
+  }
+
+  .statement-inner {
+    width: calc(100% - 48px);
+  }
+
+  .statement .section-label {
+    margin-bottom: 45px;
+  }
+
+  .statement-layout {
+    gap: 60px;
+  }
+
+  .statement-heading h2 {
+    font-size: clamp(64px, 20vw, 92px);
+  }
+
+  .statement-intro {
+    margin-top: 28px;
+    font-size: 16px;
+  }
+
+  .statement-posture h3 {
+    font-size: clamp(39px, 13vw, 58px);
+  }
+
+  .statement-line {
+    margin: 38px 0 25px;
+  }
+
+  #next-gathering {
+    padding: 70px 0 80px !important;
+  }
+
+  #next-gathering .section-marker {
+    width: calc(100% - 48px);
+    margin-bottom: 50px;
+  }
+
+  .gathering-inner {
+    width: calc(100% - 48px);
+  }
+
+  .gathering-title {
+    margin-bottom: 45px;
+  }
+
+  .gathering-title span {
+    font-size: clamp(60px, 18vw, 85px);
+  }
+
+  .gathering-title em {
+    font-size: clamp(31px, 10vw, 47px);
+  }
+}
+
+/* ==================================================
+   MAKOM — PRAYER REQUEST PAGE
+================================================== */
+
+.prayer-page {
+  margin: 0;
+  min-height: 100vh;
+  background: #050505;
+  color: #f5f2ec;
+}
+
+.prayer-page-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 7vw;
+  box-sizing: border-box;
+}
+
+.prayer-page-inner {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Small top label */
+
+.prayer-eyebrow {
+  margin: 0 0 42px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+/* Main headline */
+
+.prayer-page h1 {
+  margin: 0;
+  max-width: 900px;
+
+  font-size: clamp(58px, 8vw, 125px);
+  line-height: 0.86;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.prayer-page h1 span {
+  color: #ed001c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Intro */
+
+.prayer-intro {
+  max-width: 670px;
+  margin: 48px 0 70px;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: #c8c8c8;
+}
+
+/* Form */
+
+.prayer-form {
+  width: 100%;
+  max-width: 900px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px 50px;
+}
+
+.prayer-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.prayer-field-full {
+  grid-column: 1 / -1;
+}
+
+.prayer-field label {
+  margin-bottom: 13px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #9b9b9b;
+}
+
+.prayer-field label span {
+  color: #555;
+}
+
+/* Inputs */
+
+.prayer-field input,
+.prayer-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #393939;
+  border-radius: 0;
+
+  padding: 12px 0 16px;
+
+  color: #fff;
+  font: inherit;
+  font-size: 17px;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease;
+}
+
+.prayer-field textarea {
+  min-height: 150px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.prayer-field input::placeholder,
+.prayer-field textarea::placeholder {
+  color: #666;
+}
+
+.prayer-field input:focus,
+.prayer-field textarea:focus {
+  border-bottom-color: #ed001c;
+}
+
+/* Submit */
+
+.prayer-submit {
+  grid-column: 1 / -1;
+
+  width: fit-content;
+
+  margin-top: 5px;
+  padding: 0 0 10px;
+
+  border: 0;
+  border-bottom: 2px solid #ed001c;
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.prayer-submit:hover {
+  color: #ed001c;
+  transform: translateX(4px);
+}
+
+/* Privacy */
+
+.prayer-privacy {
+  max-width: 900px;
+
+  margin: 35px 0 0;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #222;
+
+  font-size: 13px;
+  line-height: 1.6;
+  color: #777;
+}
+
+/* Return link */
+
+.prayer-return {
+  display: inline-block;
+
+  margin-top: 40px;
+
+  color: #aaa;
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  transition: color 0.2s ease;
+}
+
+.prayer-return:hover {
+  color: #ed001c;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 900px) {
+
+  .prayer-page-wrap {
+    padding: 90px 7vw;
+    align-items: flex-start;
+  }
+
+  .prayer-page h1 {
+    font-size: clamp(55px, 11vw, 90px);
+  }
+
+  .prayer-form {
+    grid-template-columns: 1fr;
+  }
+
+  .prayer-field-full,
+  .prayer-submit {
+    grid-column: auto;
+  }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+  .prayer-page-wrap {
+    padding: 65px 24px;
+  }
+
+  .prayer-eyebrow {
+    margin-bottom: 32px;
+  }
+
+  .prayer-page h1 {
+    font-size: clamp(48px, 15vw, 70px);
+    line-height: 0.9;
+  }
+
+  .prayer-intro {
+    margin: 35px 0 50px;
+    font-size: 16px;
+  }
+
+  .prayer-form {
+    gap: 34px;
+  }
+
+  .prayer-field textarea {
+    min-height: 135px;
+  }
+
+}
