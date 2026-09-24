@@ -6120,3 +6120,40 @@ html, body { max-width: 100%; overflow-x: hidden; }
   line-height: 1.75;
   font-weight: 400;
 }
+
+
+@media (min-width: 769px) {
+
+  .heart-content h2,
+  .come-heading h2,
+  .vision-heading h2,
+  .pillars-header h2,
+  .statement-heading h2,
+  .next-top h2,
+  .connect-heading h2 {
+    font-size: clamp(72px, 7vw, 120px) !important;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 800;
+  }
+
+}
+
+/* ==========================================
+   MAKOM — MOBILE HEADING SYSTEM
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  .heart-content h2,
+  .come-heading h2,
+  .vision-heading h2,
+  .pillars-header h2,
+  .statement-heading h2,
+  .next-top h2,
+  .connect-heading h2 {
+    font-size: clamp(52px, 15vw, 72px) !important;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 800;
+  }
+
+}
