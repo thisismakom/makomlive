@@ -5688,3 +5688,214 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .statement-inner::after {
     display: none !important;
 }
+
+
+/* EXPERIENCE — CLEAN CONTINUOUS BOTTOM LINE */
+
+.pillar-grid {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.pillar-grid article {
+    border-bottom: none !important;
+}
+
+/* ==========================================
+   MAKOM — OUR VISION REFINEMENT
+   ========================================== */
+
+.vision {
+  padding: 110px 7vw 130px;
+}
+
+.vision-inner {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* OUR VISION label */
+.vision .section-label {
+  margin-bottom: 65px;
+}
+
+/* Main layout */
+.vision-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(70px, 8vw, 130px);
+  align-items: start;
+}
+
+/* Main statement */
+.vision-heading h2 {
+  margin: 0;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: clamp(68px, 6.3vw, 112px);
+  font-weight: 800;
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+}
+
+/* ENCOUNTER */
+.vision-heading h2 em {
+  display: block;
+  margin-top: 8px;
+
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 0.92em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+
+  color: #e6001c;
+}
+
+/* Right column */
+.vision-content {
+  max-width: 520px;
+  padding-top: 20px;
+}
+
+/* Opening vision statement */
+.vision-content > p:first-child {
+  margin: 0 0 38px;
+  font-size: clamp(23px, 1.8vw, 31px);
+  line-height: 1.42;
+  font-weight: 500;
+}
+
+/* Supporting copy */
+.vision-content p {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.75;
+}
+
+/* Divider */
+.vision-content hr,
+.vision-line {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+  margin: 48px 0;
+}
+
+
+/* ==========================================
+   OUR VISION — MOBILE
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  .vision {
+    padding: 80px 24px 95px;
+  }
+
+  .vision .section-label {
+    margin-bottom: 40px;
+  }
+
+  .vision-layout {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .vision-heading h2 {
+    font-size: clamp(52px, 15vw, 78px);
+  }
+
+  .vision-heading h2 em {
+    margin-top: 5px;
+  }
+
+  .vision-content {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .vision-content > p:first-child {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+}
+
+/* ==========================================
+   THE POSTURE — MOBILE REFINEMENT
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  .statement {
+    padding: 80px 24px 90px;
+  }
+
+  .statement-inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* THE POSTURE */
+  .statement .section-label {
+    margin-bottom: 48px;
+    font-size: 10px;
+    letter-spacing: 0.24em;
+  }
+
+  /* Stack cleanly */
+  .statement-layout {
+    display: block;
+  }
+
+  /* DRAW NEAR */
+  .statement-heading h2 {
+    margin: 0;
+    font-size: clamp(62px, 18vw, 92px);
+    line-height: 0.82;
+    letter-spacing: -0.055em;
+  }
+
+  .statement-heading h2 span {
+    display: block;
+  }
+
+  .statement-intro {
+    margin-top: 28px;
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* BE STILL / WORSHIP / PRAY / ABIDE */
+  .statement-posture {
+    margin-top: 70px;
+  }
+
+  .statement-posture h3 {
+    margin: 0;
+    font-size: clamp(38px, 11vw, 54px);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    font-weight: 400;
+  }
+
+  .statement-posture h3 span {
+    color: #e6001c;
+  }
+
+  /* Divider */
+  .statement-line {
+    width: 100%;
+    height: 1px;
+    margin: 42px 0 28px;
+    background: rgba(255, 255, 255, 0.16);
+  }
+
+  .statement-note {
+    margin: 0;
+    max-width: 340px;
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.6;
+  }
+}
