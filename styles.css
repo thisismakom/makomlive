@@ -5899,3 +5899,126 @@ html, body { max-width: 100%; overflow-x: hidden; }
     opacity: 0.6;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  /* Force proper mobile gutters */
+  .statement {
+    padding: 70px 24px 80px !important;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .statement-inner {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .statement-layout {
+    display: block !important;
+    width: 100%;
+  }
+
+  /* DRAW NEAR */
+  .statement-heading h2 {
+    margin: 0;
+    font-size: clamp(58px, 17vw, 78px);
+    line-height: 0.84;
+  }
+
+  .statement-intro {
+    margin: 28px 0 0;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  /* Remove the giant gap */
+  .statement-posture {
+    margin-top: 70px !important;
+    padding-top: 0 !important;
+  }
+
+  .statement-posture h3 {
+    margin: 0;
+    font-size: clamp(38px, 10.5vw, 48px);
+    line-height: 1.08;
+  }
+
+  .statement-line {
+    margin: 42px 0 28px;
+  }
+
+  .statement-note {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+}
+
+
+/* ==========================================
+   OUR VISION — MOBILE FINAL
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  .vision {
+    padding: 75px 24px 90px !important;
+  }
+
+  .vision-inner {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* OUR VISION */
+  .vision .section-label {
+    margin: 0 0 55px !important;
+  }
+
+  .vision-layout {
+    display: block !important;
+  }
+
+  /* CREATING SPACE FOR ENCOUNTER */
+  .vision-heading h2 {
+    margin: 0 !important;
+    font-size: clamp(48px, 13.5vw, 66px);
+    line-height: 0.9;
+    letter-spacing: -0.055em;
+  }
+
+  .vision-heading h2 em {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.9em;
+    line-height: 0.92;
+  }
+
+  /* Body copy */
+  .vision-content {
+    margin-top: 65px !important;
+    padding: 0 !important;
+    max-width: 100%;
+  }
+
+  .vision-content > p:first-child {
+    margin: 0 0 34px;
+    font-size: 21px;
+    line-height: 1.55;
+  }
+
+  .vision-content p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
+
+
+.pillar-grid {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
