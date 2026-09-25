@@ -6589,3 +6589,149 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }
+
+
+/* =========================================================
+   MAKOM — MOBILE SECTION SPACING OVERRIDE
+   Vision / Posture / Connect
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* -----------------------------------------
+     OUR VISION
+  ----------------------------------------- */
+
+  .vision {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 70px 6vw 85px !important;
+  }
+
+  .vision-inner {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .vision .section-label {
+    margin: 0 0 45px !important;
+  }
+
+  .vision-layout {
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .vision-heading {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .vision-heading h2 {
+    margin: 0 !important;
+  }
+
+  .vision-content {
+    margin: 38px 0 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+
+  /* -----------------------------------------
+     THE POSTURE
+  ----------------------------------------- */
+
+  .statement {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 75px 6vw 85px !important;
+  }
+
+  .statement-inner {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .statement .section-label {
+    margin: 0 0 40px !important;
+  }
+
+  .statement-layout {
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .statement-heading,
+  .statement-posture {
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .statement-heading h2 {
+    margin: 0 !important;
+  }
+
+  .statement-heading p {
+    margin-top: 28px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .statement-posture {
+    margin-top: 65px !important;
+  }
+
+
+  /* -----------------------------------------
+     CONNECT
+  ----------------------------------------- */
+
+  .connect {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 70px 6vw 85px !important;
+  }
+
+  .connect-inner {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .connect .section-label {
+    margin: 0 0 48px !important;
+  }
+
+  .connect-layout {
+    min-height: 0 !important;
+    height: auto !important;
+    gap: 0 !important;
+  }
+
+  .connect-heading {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .connect-heading h2 {
+    margin: 0 !important;
+  }
+
+  .connect-content {
+    margin: 45px 0 0 !important;
+    padding: 0 !important;
+  }
+
+}
+                                                                                                                                                                                                                                
+@media (max-width: 768px) {
+
+  /* HERO — reduce GOD only on mobile */
+  .hero-title .god {
+    font-size: 0.82em !important;
+  }
+
+}
