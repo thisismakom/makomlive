@@ -6280,3 +6280,227 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }\n\n/* =========================================\n   MAKOM — FINAL MOBILE SPACING CLEANUP\n   2026-09-25\n   Keep this block LAST in the stylesheet.\n========================================= */\n@media (max-width: 768px) {\n  /* OUR VISION */\n  .vision {\n    padding: 72px 24px 82px !important;\n    min-height: auto !important;\n  }\n  .vision .section-label {\n    margin: 0 0 42px !important;\n  }\n  .vision-layout {\n    display: block !important;\n    margin-top: 0 !important;\n  }\n  .vision-content,\n  .vision-copy {\n    margin-top: 46px !important;\n    padding-top: 0 !important;\n    max-width: 100% !important;\n  }\n\n  /* THE POSTURE — actual section class is .statement */\n  .statement {\n    min-height: auto !important;\n    padding: 72px 24px 82px !important;\n    display: block !important;\n  }\n  .statement .section-label {\n    margin: 0 0 42px !important;\n  }\n  .statement .statement-layout {\n    display: block !important;\n    width: 100% !important;\n  }\n  .statement .statement-posture {\n    margin-top: 54px !important;\n    padding-top: 0 !important;\n  }\n  .statement-line {\n    margin: 36px 0 26px !important;\n  }\n\n  /* CONNECT */\n  .connect {\n    min-height: auto !important;\n    padding: 72px 24px 82px !important;\n  }\n  .connect .section-label {\n    margin: 0 0 42px !important;\n  }\n  .connect-layout {\n    grid-template-columns: 1fr !important;\n    gap: 46px !important;\n  }\n  .connect-content {\n    margin-top: 0 !important;\n    padding-top: 0 !important;\n  }\n}\n
+
+                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                /* =========================================================
+   MAKOM — FINAL RESPONSIVE SPACING
+   VISION / POSTURE / CONNECT
+   KEEP THIS AT THE VERY END OF styles.css
+========================================================= */
+
+
+/* =========================
+   OUR VISION — DESKTOP
+========================= */
+
+.vision {
+  min-height: auto !important;
+  padding: 120px 7vw 130px !important;
+}
+
+.vision .section-label {
+  margin: 0 0 65px !important;
+}
+
+.vision-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(70px, 8vw, 130px);
+  align-items: start;
+}
+
+.vision-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+/* =========================
+   THE POSTURE — DESKTOP
+========================= */
+
+.statement {
+  min-height: auto !important;
+  padding: 110px 0 115px !important;
+}
+
+.statement-inner {
+  width: min(88%, 1500px) !important;
+  margin: 0 auto !important;
+}
+
+.statement .section-label {
+  margin: 0 0 65px !important;
+}
+
+.statement-layout {
+  display: grid !important;
+  grid-template-columns: 1.1fr 0.75fr !important;
+  gap: clamp(80px, 10vw, 160px) !important;
+  align-items: start !important;
+}
+
+.statement-posture {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+/* =========================
+   CONNECT — DESKTOP
+========================= */
+
+.connect {
+  min-height: auto !important;
+  padding: 110px 8vw 120px !important;
+}
+
+.connect .section-label {
+  margin: 0 0 70px !important;
+}
+
+.connect-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(70px, 8vw, 120px);
+  align-items: start;
+}
+
+.connect-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* -------------------------
+     OUR VISION
+  ------------------------- */
+
+  .vision {
+    min-height: auto !important;
+    padding: 72px 24px 82px !important;
+  }
+
+  .vision .section-label {
+    margin: 0 0 42px !important;
+  }
+
+  .vision-layout {
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .vision-heading {
+    margin: 0 !important;
+  }
+
+  .vision-heading h2 {
+    margin: 0 !important;
+    font-size: clamp(48px, 13.5vw, 66px);
+    line-height: 0.9;
+  }
+
+  .vision-content,
+  .vision-copy {
+    max-width: 100% !important;
+    margin: 46px 0 0 !important;
+    padding: 0 !important;
+  }
+
+
+  /* -------------------------
+     THE POSTURE
+  ------------------------- */
+
+  .statement {
+    min-height: auto !important;
+    display: block !important;
+    padding: 72px 24px 82px !important;
+  }
+
+  .statement-inner {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .statement .section-label {
+    margin: 0 0 42px !important;
+  }
+
+  .statement-layout {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .statement-heading {
+    margin: 0 !important;
+  }
+
+  .statement-heading h2 {
+    margin: 0 !important;
+    font-size: clamp(58px, 17vw, 78px);
+    line-height: 0.84;
+  }
+
+  .statement-intro {
+    margin: 26px 0 0 !important;
+  }
+
+  .statement-posture {
+    margin: 54px 0 0 !important;
+    padding: 0 !important;
+  }
+
+  .statement-line {
+    margin: 36px 0 26px !important;
+  }
+
+
+  /* -------------------------
+     CONNECT
+  ------------------------- */
+
+  .connect {
+    min-height: auto !important;
+    padding: 72px 24px 82px !important;
+  }
+
+  .connect .section-label {
+    margin: 0 0 42px !important;
+  }
+
+  .connect-layout {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 46px !important;
+  }
+
+  .connect-heading {
+    margin: 0 !important;
+  }
+
+  .connect-heading h2 {
+    margin: 0 !important;
+    font-size: clamp(52px, 14vw, 72px);
+    line-height: 0.88;
+  }
+
+  .connect-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .connect-intro {
+    margin: 0 0 38px !important;
+  }
+
+}
