@@ -6280,3 +6280,70 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }
+
+/* =========================================
+   MOBILE — SECTION SPACING REFINEMENT
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* OUR VISION */
+  .vision {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    min-height: auto;
+  }
+
+  .vision .section-label {
+    margin-bottom: 64px;
+  }
+
+  .vision-layout {
+    gap: 56px;
+  }
+
+
+  /* THE POSTURE */
+  .posture {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    min-height: auto;
+  }
+
+  .posture .section-label {
+    margin-bottom: 64px;
+  }
+
+  .posture-heading {
+    margin-bottom: 36px;
+  }
+
+  .posture-layout {
+    gap: 64px;
+  }
+
+
+  /* CONNECT */
+  .connect {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    min-height: auto;
+  }
+
+  .connect .section-label {
+    margin-bottom: 64px;
+  }
+
+  .connect-layout {
+    gap: 56px;
+  }
+
+  .connect-heading {
+    margin-bottom: 0;
+  }
+
+  .connect-content {
+    margin-top: 0;
+  }
+
+}
