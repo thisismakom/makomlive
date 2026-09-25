@@ -6474,3 +6474,83 @@ html, body { max-width: 100%; overflow-x: hidden; }
     margin: 0 0 38px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .hero-title .god {
+    font-size: 0.64em !important;
+    line-height: 0.85 !important;
+  }
+}
+
+/* =========================================
+   FINAL MOBILE SPACING TIGHTENING
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* OUR VISION */
+  .vision {
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+
+  .vision .section-label {
+    margin-bottom: 28px;
+  }
+
+  .vision-layout {
+    margin-top: 0;
+  }
+
+  .vision-heading {
+    margin-top: 0;
+  }
+
+  .vision-content,
+  .vision-copy {
+    margin-top: 30px;
+  }
+
+
+  /* THE POSTURE */
+  .statement {
+    padding-top: 60px;
+    padding-bottom: 72px;
+  }
+
+  .statement .section-label {
+    margin-bottom: 28px;
+  }
+
+  .statement-heading {
+    margin-top: 0;
+  }
+
+  .statement-heading p {
+    margin-top: 22px;
+  }
+
+  .statement .statement-posture {
+    margin-top: 38px;
+  }
+
+
+  /* CONNECT */
+  .connect {
+    padding-top: 58px;
+    padding-bottom: 72px;
+  }
+
+  .connect .section-label {
+    margin-bottom: 30px;
+  }
+
+  .connect-layout {
+    gap: 30px;
+  }
+
+  .connect-heading {
+    margin-top: 0;
+  }
+}
