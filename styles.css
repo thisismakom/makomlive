@@ -6504,3 +6504,88 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }
+
+
+/* =========================================================
+   MAKOM — MOBILE SPACING FINAL TUNE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* ===== OUR VISION ===== */
+
+  .vision {
+    padding-top: 60px !important;
+    padding-bottom: 75px !important;
+  }
+
+  .vision .section-label {
+    margin-bottom: 55px !important;
+  }
+
+  .vision-heading h2 {
+    margin: 0 !important;
+  }
+
+  .vision-content,
+  .vision-copy {
+    margin-top: 38px !important;
+    padding-top: 0 !important;
+  }
+
+
+  /* ===== THE POSTURE ===== */
+
+  .statement {
+    padding-top: 65px !important;
+    padding-bottom: 75px !important;
+  }
+
+  .statement .section-label {
+    margin-bottom: 42px !important;
+  }
+
+  .statement-layout {
+    display: block !important;
+  }
+
+  .statement-heading,
+  .statement-posture {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .statement-posture {
+    margin-top: 45px !important;
+  }
+
+  .statement-heading h2 {
+    margin: 0 !important;
+  }
+
+
+  /* ===== CONNECT ===== */
+
+  .connect {
+    padding-top: 65px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .connect .section-label {
+    margin-bottom: 50px !important;
+  }
+
+  .connect-layout {
+    gap: 40px !important;
+  }
+
+  .connect-heading h2 {
+    margin: 0 !important;
+  }
+
+  .connect-content {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+}
