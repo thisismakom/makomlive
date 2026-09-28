@@ -1737,3 +1737,56 @@ input {
     width: calc(100% - 40px);
   }
 }
+
+/* =========================================
+   DESKTOP VISION — FINAL BALANCE
+   ========================================= */
+
+@media (min-width: 769px) {
+
+  .vision {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+
+  .vision-heading h2 {
+    font-size: clamp(56px, 5.4vw, 88px);
+    line-height: 0.9;
+  }
+
+  .vision-symbol {
+    width: 62px;
+    margin-bottom: 38px;
+  }
+
+  .vision-layout {
+    align-items: center;
+  }
+}
+
+
+/* =========================================
+   DESKTOP VISION — FINAL BALANCE
+   ========================================= */
+
+@media (min-width: 769px) {
+
+  .vision {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+
+  .vision-heading h2 {
+    font-size: clamp(56px, 5.4vw, 88px);
+    line-height: 0.9;
+  }
+
+  .vision-symbol {
+    width: 62px;
+    margin-bottom: 38px;
+  }
+
+  .vision-layout {
+    align-items: center;
+  }
+}
