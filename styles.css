@@ -2169,3 +2169,101 @@ body.prayer-page{
     min-height:145px;
   }
 }
+
+/* =========================================================
+   MAKOM — FINAL HTML-MATCHED OVERRIDES
+   Verified against current index.html
+   ========================================================= */
+
+/* Header scrolls away with the document */
+header.nav{
+  position:absolute !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  width:100% !important;
+}
+
+/* One scale for every major section statement */
+.heart-content h2,
+.come-heading h2,
+.vision-heading h2,
+.pillars-header h2,
+.statement-heading h2,
+.gathering-title,
+.connect-heading h2{
+  font-size:clamp(62px,5.6vw,90px) !important;
+  line-height:.88 !important;
+  letter-spacing:-.055em !important;
+}
+
+/* Emphasis words remain the same size as their parent heading */
+.come-heading h2 em,
+.vision-heading h2 em,
+.pillars-header h2 em,
+.gathering-title em,
+.connect-heading h2 em{
+  font-size:1em !important;
+  line-height:inherit !important;
+}
+
+/* Vision: remove symbol and eliminate excess dead space */
+.vision-symbol{display:none !important;}
+
+@media (min-width:769px){
+  .vision{
+    min-height:auto !important;
+    padding-top:92px !important;
+    padding-bottom:105px !important;
+  }
+  .vision .section-label{margin-bottom:72px !important;}
+  .vision-layout{
+    align-items:start !important;
+  }
+  .vision-heading,
+  .vision-content{
+    padding-top:0 !important;
+  }
+}
+
+/* Mobile major headings use the same scale */
+@media (max-width:768px){
+  .heart-content h2,
+  .come-heading h2,
+  .vision-heading h2,
+  .pillars-header h2,
+  .statement-heading h2,
+  .gathering-title,
+  .connect-heading h2{
+    font-size:clamp(48px,13vw,62px) !important;
+    line-height:.9 !important;
+    letter-spacing:-.05em !important;
+  }
+
+  .vision{
+    min-height:auto !important;
+    padding-top:72px !important;
+    padding-bottom:78px !important;
+  }
+  .vision .section-label{margin-bottom:48px !important;}
+}
+
+/* Hero is intentionally separate from the section-heading system */
+.hero-title{
+  font-size:clamp(72px,7vw,116px) !important;
+}
+.hero-title em{
+  display:block;
+  margin-top:.12em;
+  font-size:1.08em !important;
+  line-height:.86 !important;
+}
+
+@media (max-width:768px){
+  .hero-title{
+    font-size:clamp(46px,13vw,62px) !important;
+  }
+  .hero-title em{
+    font-size:1.12em !important;
+  }
+}
