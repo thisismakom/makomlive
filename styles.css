@@ -2267,3 +2267,17 @@ header.nav{
     font-size:1.12em !important;
   }
 }
+
+
+/* ========================================
+   EXPERIENCE — RESTORE DIVIDER LINES
+   ======================================== */
+
+.experience-grid {
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.experience-item + .experience-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.20);
+}
