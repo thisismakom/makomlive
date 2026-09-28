@@ -6759,3 +6759,34 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
 
 }
+
+/* =========================================
+   MAKOM — FINAL MOBILE SPACING
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .heart,
+  .come,
+  .vision,
+  .connect,
+  .pillars,
+  .next,
+  .statement {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .section-label {
+    margin-bottom: 34px;
+  }
+
+  .statement {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .connect {
+    padding-top: 80px;
+  }
+}
