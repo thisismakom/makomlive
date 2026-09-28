@@ -130,8 +130,7 @@ input {
   transition: right .25s ease;
 }
 
-.desktop-nav a:hover::after,
-.desktop-nav .nav-button::after {
+.desktop-nav a:hover::after {
   right: 0;
 }
 
