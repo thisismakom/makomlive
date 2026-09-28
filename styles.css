@@ -65,8 +65,7 @@ input {
    ========================================================= */
 
 .nav {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 1000;
 
   width: 100%;
@@ -259,7 +258,7 @@ input {
   margin: 0;
 
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: clamp(84px, 9vw, 150px);
+  font-size: clamp(76px, 8vw, 132px);
   font-weight: 800;
   line-height: .79;
   letter-spacing: -.065em;
@@ -280,7 +279,7 @@ input {
   margin-top: 24px;
 
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: .72em;
+  font-size: .88em;
   font-weight: 500;
   line-height: .88;
   letter-spacing: -.045em;
@@ -345,7 +344,7 @@ input {
 .heart-content h2 {
   margin: 0;
 
-  font-size: clamp(66px, 7.2vw, 112px);
+  font-size: clamp(64px, 6.6vw, 104px);
   font-weight: 800;
   line-height: .84;
   letter-spacing: -.065em;
@@ -412,7 +411,7 @@ input {
 .come-heading h2 {
   margin: 0;
 
-  font-size: clamp(64px, 7vw, 108px);
+  font-size: clamp(64px, 6.6vw, 104px);
   font-weight: 800;
   line-height: .84;
   letter-spacing: -.06em;
@@ -481,14 +480,13 @@ input {
 }
 
 .vision-symbol {
-  width: 74px;
-  margin-bottom: 45px;
+  display: none;
 }
 
 .vision-heading h2 {
   margin: 0;
 
-  font-size: clamp(62px, 6.5vw, 102px);
+  font-size: clamp(64px, 6.6vw, 104px);
   font-weight: 800;
   line-height: .88;
   letter-spacing: -.06em;
@@ -551,7 +549,7 @@ input {
 .pillars-header h2 {
   margin: 0 0 35px;
 
-  font-size: clamp(70px, 7.8vw, 122px);
+  font-size: clamp(64px, 6.6vw, 104px);
   font-weight: 800;
   line-height: .82;
   letter-spacing: -.065em;
@@ -661,7 +659,7 @@ input {
 .statement-heading h2 {
   margin: 0;
 
-  font-size: clamp(76px, 8vw, 126px);
+  font-size: clamp(64px, 6.6vw, 104px);
   font-weight: 800;
   line-height: .82;
   letter-spacing: -.065em;
@@ -751,7 +749,7 @@ input {
 .gathering-title span {
   display: block;
 
-  font-size: clamp(70px, 8vw, 126px);
+  font-size: clamp(64px, 6.6vw, 104px);
   font-weight: 800;
   line-height: .82;
   letter-spacing: -.065em;
@@ -857,7 +855,7 @@ input {
 .connect-heading h2 {
   margin: 0;
 
-  font-size: clamp(62px, 6.6vw, 104px);
+  font-size: clamp(64px, 6.6vw, 104px);
   font-weight: 800;
   line-height: .87;
   letter-spacing: -.06em;
@@ -1321,7 +1319,7 @@ input {
   .hero-title {
     width: 100%;
 
-    font-size: clamp(49px, 15.2vw, 72px);
+    font-size: clamp(43px, 13.2vw, 62px);
     line-height: .86;
     letter-spacing: -.055em;
   }
@@ -1333,7 +1331,7 @@ input {
   .hero-title em {
     margin-top: 15px;
 
-    font-size: .78em;
+    font-size: 1.02em;
     line-height: .9;
   }
 
@@ -1360,7 +1358,7 @@ input {
   .heart-content h2 {
     margin: 0 0 40px;
 
-    font-size: clamp(52px, 15vw, 70px);
+    font-size: clamp(48px, 13.5vw, 64px);
     line-height: .86;
   }
 
@@ -1398,7 +1396,7 @@ input {
   .come-heading h2 {
     margin: 0 0 40px;
 
-    font-size: clamp(52px, 15vw, 70px);
+    font-size: clamp(48px, 13.5vw, 64px);
     line-height: .86;
   }
 
@@ -1440,7 +1438,7 @@ input {
   .vision-heading h2 {
     margin: 0;
 
-    font-size: clamp(48px, 13.4vw, 64px);
+    font-size: clamp(48px, 13.5vw, 64px);
     line-height: .91;
   }
 
@@ -1479,7 +1477,7 @@ input {
   .pillars-header h2 {
     margin-bottom: 28px;
 
-    font-size: clamp(52px, 15vw, 70px);
+    font-size: clamp(48px, 13.5vw, 64px);
     line-height: .86;
   }
 
@@ -1533,7 +1531,7 @@ input {
   .statement-heading h2 {
     margin: 0;
 
-    font-size: clamp(52px, 15vw, 70px);
+    font-size: clamp(48px, 13.5vw, 64px);
     line-height: .86;
   }
 
@@ -1571,7 +1569,7 @@ input {
   }
 
   .gathering-title span {
-    font-size: clamp(52px, 15vw, 70px);
+    font-size: clamp(48px, 13.5vw, 64px);
     line-height: .86;
   }
 
@@ -1621,7 +1619,7 @@ input {
   .connect-heading h2 {
     margin: 0;
 
-    font-size: clamp(47px, 13.2vw, 63px);
+    font-size: clamp(48px, 13.5vw, 64px);
     line-height: .9;
   }
 
@@ -1739,54 +1737,25 @@ input {
 }
 
 /* =========================================
-   DESKTOP VISION — FINAL BALANCE
+   FINAL DESKTOP REFINEMENTS
    ========================================= */
-
 @media (min-width: 769px) {
-
   .vision {
-    padding-top: 100px;
-    padding-bottom: 110px;
-  }
-
-  .vision-heading h2 {
-    font-size: clamp(56px, 5.4vw, 88px);
-    line-height: 0.9;
-  }
-
-  .vision-symbol {
-    width: 62px;
-    margin-bottom: 38px;
+    padding-top: 105px;
+    padding-bottom: 115px;
   }
 
   .vision-layout {
     align-items: center;
   }
-}
 
-
-/* =========================================
-   DESKTOP VISION — FINAL BALANCE
-   ========================================= */
-
-@media (min-width: 769px) {
-
-  .vision {
-    padding-top: 100px;
-    padding-bottom: 110px;
+  .vision-heading {
+    padding-top: 0;
   }
 
   .vision-heading h2 {
-    font-size: clamp(56px, 5.4vw, 88px);
-    line-height: 0.9;
-  }
-
-  .vision-symbol {
-    width: 62px;
-    margin-bottom: 38px;
-  }
-
-  .vision-layout {
-    align-items: center;
+    font-size: clamp(64px, 6.6vw, 104px);
+    line-height: .86;
   }
 }
+\n\n/* =========================================================\n   PRAYER PAGE\n   ========================================================= */\nbody.prayer-page {\n  min-height: 100vh;\n  background: var(--black);\n  color: var(--white);\n}\n\n.prayer-page-wrap {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  padding: 90px 6vw;\n}\n\n.prayer-page-inner {\n  width: min(900px, 100%);\n  margin: 0 auto;\n}\n\n.prayer-eyebrow {\n  margin: 0 0 28px;\n  color: #aaa;\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: .28em;\n  text-transform: uppercase;\n}\n\n.prayer-page-inner h1 {\n  margin: 0 0 32px;\n  font-size: clamp(58px, 6.5vw, 102px);\n  font-weight: 800;\n  line-height: .86;\n  letter-spacing: -.055em;\n}\n\n.prayer-page-inner h1 span { color: var(--red); }\n\n.prayer-intro {\n  max-width: 760px;\n  margin: 0 0 52px;\n  color: #c8c8c8;\n  font-size: 17px;\n  line-height: 1.75;\n}\n\n.prayer-form {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 30px 35px;\n}\n\n.prayer-field { display: flex; flex-direction: column; gap: 11px; }\n.prayer-field-full { grid-column: 1 / -1; }\n\n.prayer-field label {\n  font-size: 9px;\n  font-weight: 700;\n  letter-spacing: .18em;\n  text-transform: uppercase;\n}\n.prayer-field label span { color: #777; font-weight: 500; }\n\n.prayer-field input,\n.prayer-field textarea {\n  width: 100%;\n  min-width: 0;\n  padding: 16px 0;\n  border: 0;\n  border-bottom: 1px solid rgba(255,255,255,.3);\n  border-radius: 0;\n  outline: none;\n  background: transparent;\n  color: #fff;\n  font-family: inherit;\n  font-size: 15px;\n}\n.prayer-field textarea {\n  min-height: 170px;\n  resize: vertical;\n  border: 1px solid rgba(255,255,255,.3);\n  padding: 18px;\n}\n.prayer-field input::placeholder, .prayer-field textarea::placeholder { color: #777; }\n.prayer-field input:focus, .prayer-field textarea:focus { border-color: var(--red); }\n\n.prayer-submit {\n  grid-column: 1 / -1;\n  justify-self: start;\n  margin-top: 8px;\n  padding: 16px 22px;\n  border: 1px solid var(--white);\n  background: var(--white);\n  color: var(--black);\n  cursor: pointer;\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: .16em;\n  text-transform: uppercase;\n}\n.prayer-submit:hover { background: var(--red); border-color: var(--red); color: #fff; }\n\n.prayer-privacy {\n  margin: 28px 0 0;\n  color: #777;\n  font-size: 12px;\n  line-height: 1.6;\n}\n.prayer-return {\n  display: inline-block;\n  margin-top: 48px;\n  padding-bottom: 6px;\n  border-bottom: 1px solid var(--red);\n  color: #fff;\n  text-decoration: none;\n  font-size: 9px;\n  font-weight: 700;\n  letter-spacing: .16em;\n}\n\n@media (max-width: 768px) {\n  .prayer-page-wrap { align-items: flex-start; padding: 85px 24px 65px; }\n  .prayer-page-inner h1 { font-size: clamp(48px, 13.5vw, 64px); }\n  .prayer-intro { margin-bottom: 40px; font-size: 16px; line-height: 1.7; }\n  .prayer-form { grid-template-columns: 1fr; gap: 25px; }\n  .prayer-field-full, .prayer-submit { grid-column: auto; }\n  .prayer-field textarea { min-height: 155px; }\n}\n
