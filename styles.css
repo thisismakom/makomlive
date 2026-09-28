@@ -6790,3 +6790,75 @@ html, body { max-width: 100%; overflow-x: hidden; }
     padding-top: 80px;
   }
 }
+
+/* =========================================
+   MAKOM — MOBILE SECTION SPACING FIX
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  /* Kill desktop forced section heights */
+  .heart,
+  .come,
+  .vision,
+  .connect {
+    min-height: auto !important;
+  }
+
+  /* Consistent mobile section rhythm */
+  .heart,
+  .come,
+  .vision,
+  .connect,
+  .pillars,
+  .next,
+  .statement {
+    padding-top: 72px !important;
+    padding-bottom: 72px !important;
+  }
+
+  /* Labels should introduce content,
+     not float hundreds of pixels above it */
+  .section-label {
+    margin-top: 0 !important;
+    margin-bottom: 36px !important;
+  }
+
+  /* Grid sections */
+  .heart,
+  .come {
+    gap: 32px !important;
+  }
+
+  /* Vision */
+  .vision h2 {
+    margin-top: 0 !important;
+    margin-bottom: 32px !important;
+  }
+
+  .vision-copy {
+    margin-top: 32px !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* Posture */
+  .statement > p {
+    margin-top: 0 !important;
+    margin-bottom: 32px !important;
+  }
+
+  .statement h2 {
+    margin-top: 0 !important;
+    margin-bottom: 28px !important;
+  }
+
+  /* Connect */
+  .connect h2 {
+    margin-top: 0 !important;
+  }
+
+  .connect > p {
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+  }
+}
