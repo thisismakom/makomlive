@@ -2466,3 +2466,27 @@ header.nav{
     border-bottom: none;
   }
 }
+
+
+/* ========================================
+   NAV — HOVER UNDERLINE ONLY
+   ======================================== */
+
+.nav-links a,
+.nav-links a.active,
+.nav-links a[aria-current="page"] {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.nav-links a::after,
+.nav-links a.active::after,
+.nav-links a[aria-current="page"]::after {
+  display: none !important;
+  content: none !important;
+}
+
+.nav-links a:hover {
+  border-bottom: 1px solid #ed1c24 !important;
+}
