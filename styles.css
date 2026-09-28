@@ -2281,3 +2281,105 @@ header.nav{
 .experience-item + .experience-item {
   border-left: 1px solid rgba(255, 255, 255, 0.20);
 }
+
+
+/* =========================================
+   UNIFIED MAJOR SECTION HEADLINES
+   ========================================= */
+
+/* Desktop */
+.come-as-you-are h2,
+.vision-heading h2 {
+  font-size: clamp(4.5rem, 6.2vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+  margin: 0;
+}
+
+/* Keep italic/red words proportional */
+.come-as-you-are h2 em,
+.vision-heading h2 em {
+  font-size: 1em;
+  line-height: inherit;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .come-as-you-are h2,
+  .vision-heading h2 {
+    font-size: clamp(3.4rem, 14vw, 5rem);
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+  }
+}
+
+/* =========================================
+   MAKOM — UNIFIED MAJOR HEADLINE SCALE
+   ========================================= */
+
+/* DESKTOP */
+.come-as-you-are h2,
+.vision-heading h2,
+.gathering-heading h2,
+.posture h2 {
+  font-size: clamp(4.5rem, 6.2vw, 7rem) !important;
+  line-height: 0.88 !important;
+  letter-spacing: -0.055em;
+}
+
+/* Italic/red emphasis stays exactly same scale */
+.come-as-you-are h2 em,
+.vision-heading h2 em,
+.gathering-heading h2 em,
+.posture h2 em {
+  font-size: 1em !important;
+  line-height: inherit;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .come-as-you-are h2,
+  .vision-heading h2,
+  .gathering-heading h2,
+  .posture h2 {
+    font-size: clamp(3.4rem, 14vw, 5rem) !important;
+    line-height: 0.90 !important;
+    letter-spacing: -0.05em;
+  }
+}
+
+/* =========================================
+   MAKOM — UNIFIED MAJOR HEADLINE SCALE
+   ========================================= */
+
+.come-as-you-are h2,
+.vision-heading h2,
+.gathering-heading h2,
+.posture h2,
+.connect h2 {
+  font-size: clamp(4.5rem, 6.2vw, 7rem) !important;
+  line-height: 0.88 !important;
+  letter-spacing: -0.055em;
+}
+
+/* Emphasized / italic words */
+.come-as-you-are h2 em,
+.vision-heading h2 em,
+.gathering-heading h2 em,
+.posture h2 em,
+.connect h2 em {
+  font-size: 1em !important;
+  line-height: inherit;
+}
+
+@media (max-width: 768px) {
+  .come-as-you-are h2,
+  .vision-heading h2,
+  .gathering-heading h2,
+  .posture h2,
+  .connect h2 {
+    font-size: clamp(3.4rem, 14vw, 5rem) !important;
+    line-height: 0.90 !important;
+    letter-spacing: -0.05em;
+  }
+}
