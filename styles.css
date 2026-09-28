@@ -1758,4 +1758,414 @@ input {
     line-height: .86;
   }
 }
-\n\n/* =========================================================\n   PRAYER PAGE\n   ========================================================= */\nbody.prayer-page {\n  min-height: 100vh;\n  background: var(--black);\n  color: var(--white);\n}\n\n.prayer-page-wrap {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  padding: 90px 6vw;\n}\n\n.prayer-page-inner {\n  width: min(900px, 100%);\n  margin: 0 auto;\n}\n\n.prayer-eyebrow {\n  margin: 0 0 28px;\n  color: #aaa;\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: .28em;\n  text-transform: uppercase;\n}\n\n.prayer-page-inner h1 {\n  margin: 0 0 32px;\n  font-size: clamp(58px, 6.5vw, 102px);\n  font-weight: 800;\n  line-height: .86;\n  letter-spacing: -.055em;\n}\n\n.prayer-page-inner h1 span { color: var(--red); }\n\n.prayer-intro {\n  max-width: 760px;\n  margin: 0 0 52px;\n  color: #c8c8c8;\n  font-size: 17px;\n  line-height: 1.75;\n}\n\n.prayer-form {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 30px 35px;\n}\n\n.prayer-field { display: flex; flex-direction: column; gap: 11px; }\n.prayer-field-full { grid-column: 1 / -1; }\n\n.prayer-field label {\n  font-size: 9px;\n  font-weight: 700;\n  letter-spacing: .18em;\n  text-transform: uppercase;\n}\n.prayer-field label span { color: #777; font-weight: 500; }\n\n.prayer-field input,\n.prayer-field textarea {\n  width: 100%;\n  min-width: 0;\n  padding: 16px 0;\n  border: 0;\n  border-bottom: 1px solid rgba(255,255,255,.3);\n  border-radius: 0;\n  outline: none;\n  background: transparent;\n  color: #fff;\n  font-family: inherit;\n  font-size: 15px;\n}\n.prayer-field textarea {\n  min-height: 170px;\n  resize: vertical;\n  border: 1px solid rgba(255,255,255,.3);\n  padding: 18px;\n}\n.prayer-field input::placeholder, .prayer-field textarea::placeholder { color: #777; }\n.prayer-field input:focus, .prayer-field textarea:focus { border-color: var(--red); }\n\n.prayer-submit {\n  grid-column: 1 / -1;\n  justify-self: start;\n  margin-top: 8px;\n  padding: 16px 22px;\n  border: 1px solid var(--white);\n  background: var(--white);\n  color: var(--black);\n  cursor: pointer;\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: .16em;\n  text-transform: uppercase;\n}\n.prayer-submit:hover { background: var(--red); border-color: var(--red); color: #fff; }\n\n.prayer-privacy {\n  margin: 28px 0 0;\n  color: #777;\n  font-size: 12px;\n  line-height: 1.6;\n}\n.prayer-return {\n  display: inline-block;\n  margin-top: 48px;\n  padding-bottom: 6px;\n  border-bottom: 1px solid var(--red);\n  color: #fff;\n  text-decoration: none;\n  font-size: 9px;\n  font-weight: 700;\n  letter-spacing: .16em;\n}\n\n@media (max-width: 768px) {\n  .prayer-page-wrap { align-items: flex-start; padding: 85px 24px 65px; }\n  .prayer-page-inner h1 { font-size: clamp(48px, 13.5vw, 64px); }\n  .prayer-intro { margin-bottom: 40px; font-size: 16px; line-height: 1.7; }\n  .prayer-form { grid-template-columns: 1fr; gap: 25px; }\n  .prayer-field-full, .prayer-submit { grid-column: auto; }\n  .prayer-field textarea { min-height: 155px; }\n}\n
+
+/* =========================================================
+   PRAYER PAGE
+   ========================================================= */
+body.prayer-page {
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--white);
+}
+
+.prayer-page-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 90px 6vw;
+}
+
+.prayer-page-inner {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.prayer-eyebrow {
+  margin: 0 0 28px;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+
+.prayer-page-inner h1 {
+  margin: 0 0 32px;
+  font-size: clamp(58px, 6.5vw, 102px);
+  font-weight: 800;
+  line-height: .86;
+  letter-spacing: -.055em;
+}
+
+.prayer-page-inner h1 span { color: var(--red); }
+
+.prayer-intro {
+  max-width: 760px;
+  margin: 0 0 52px;
+  color: #c8c8c8;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.prayer-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px 35px;
+}
+
+.prayer-field { display: flex; flex-direction: column; gap: 11px; }
+.prayer-field-full { grid-column: 1 / -1; }
+
+.prayer-field label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+.prayer-field label span { color: #777; font-weight: 500; }
+
+.prayer-field input,
+.prayer-field textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 16px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+}
+.prayer-field textarea {
+  min-height: 170px;
+  resize: vertical;
+  border: 1px solid rgba(255,255,255,.3);
+  padding: 18px;
+}
+.prayer-field input::placeholder, .prayer-field textarea::placeholder { color: #777; }
+.prayer-field input:focus, .prayer-field textarea:focus { border-color: var(--red); }
+
+.prayer-submit {
+  grid-column: 1 / -1;
+  justify-self: start;
+  margin-top: 8px;
+  padding: 16px 22px;
+  border: 1px solid var(--white);
+  background: var(--white);
+  color: var(--black);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.prayer-submit:hover { background: var(--red); border-color: var(--red); color: #fff; }
+
+.prayer-privacy {
+  margin: 28px 0 0;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.prayer-return {
+  display: inline-block;
+  margin-top: 48px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--red);
+  color: #fff;
+  text-decoration: none;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+@media (max-width: 768px) {
+  .prayer-page-wrap { align-items: flex-start; padding: 85px 24px 65px; }
+  .prayer-page-inner h1 { font-size: clamp(48px, 13.5vw, 64px); }
+  .prayer-intro { margin-bottom: 40px; font-size: 16px; line-height: 1.7; }
+  .prayer-form { grid-template-columns: 1fr; gap: 25px; }
+  .prayer-field-full, .prayer-submit { grid-column: auto; }
+  .prayer-field textarea { min-height: 155px; }
+}
+
+
+/* =========================================================
+   MAKOM — FINAL AUTHORITATIVE CORRECTIONS
+   ========================================================= */
+
+/* Header belongs to the document flow: it scrolls away with the page. */
+.nav{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+}
+
+/* Vision: no symbol, tighter composition, same display scale as the site. */
+.vision-symbol{display:none !important;}
+
+@media (min-width:769px){
+  .vision{
+    padding:92px 0 105px;
+    min-height:auto;
+  }
+
+  .vision-inner{
+    width:min(1460px, calc(100% - 120px));
+    margin:0 auto;
+  }
+
+  .vision .section-label{
+    margin-bottom:78px;
+  }
+
+  .vision-layout{
+    display:grid;
+    grid-template-columns:minmax(0, .95fr) minmax(420px, .8fr);
+    gap:clamp(80px, 10vw, 170px);
+    align-items:start;
+  }
+
+  .vision-heading{
+    padding:0;
+    align-self:start;
+  }
+
+  .vision-heading h2{
+    margin:0;
+    font-size:clamp(62px, 5.6vw, 90px);
+    line-height:.88;
+    letter-spacing:-.055em;
+  }
+
+  .vision-heading em{
+    font-size:.92em;
+  }
+
+  .vision-content{
+    padding-top:0;
+    max-width:610px;
+  }
+
+  .vision-lead{
+    margin-top:0;
+  }
+
+  .vision-statement{
+    margin-bottom:0;
+  }
+}
+
+/* Prayer page */
+body.prayer-page{
+  margin:0;
+  min-height:100vh;
+  overflow-x:hidden;
+  background:#050505;
+  color:#f5f2ec;
+}
+
+.prayer-page-wrap{
+  min-height:100vh;
+  display:flex;
+  align-items:flex-start;
+  box-sizing:border-box;
+  padding:88px 7vw 90px;
+}
+
+.prayer-page-inner{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+}
+
+.prayer-eyebrow{
+  margin:0 0 34px;
+  color:#777;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+}
+
+.prayer-page h1{
+  max-width:900px;
+  margin:0;
+  font-size:clamp(58px,7vw,112px);
+  font-weight:800;
+  line-height:.87;
+  letter-spacing:-.055em;
+  text-transform:uppercase;
+}
+
+.prayer-page h1 span{
+  color:var(--red);
+  font-family:"Playfair Display",Georgia,serif;
+  font-style:italic;
+  font-weight:500;
+}
+
+.prayer-intro{
+  max-width:700px;
+  margin:42px 0 58px;
+  color:#c8c8c8;
+  font-size:17px;
+  line-height:1.7;
+}
+
+.prayer-form{
+  width:100%;
+  max-width:900px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:38px 50px;
+}
+
+.prayer-field{
+  display:flex;
+  flex-direction:column;
+}
+
+.prayer-field-full{
+  grid-column:1/-1;
+}
+
+.prayer-field label{
+  margin:0 0 12px;
+  color:#9b9b9b;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+
+.prayer-field label span{
+  color:#555;
+}
+
+.prayer-field input,
+.prayer-field textarea{
+  width:100%;
+  box-sizing:border-box;
+  border:0;
+  border-bottom:1px solid #393939;
+  border-radius:0;
+  outline:none;
+  background:transparent;
+  color:#fff;
+  font:inherit;
+  font-size:17px;
+}
+
+.prayer-field input{
+  padding:12px 0 16px;
+}
+
+.prayer-field textarea{
+  min-height:155px;
+  padding:14px 0 16px;
+  resize:vertical;
+  line-height:1.6;
+}
+
+.prayer-field input::placeholder,
+.prayer-field textarea::placeholder{
+  color:#666;
+}
+
+.prayer-field input:focus,
+.prayer-field textarea:focus{
+  border-bottom-color:var(--red);
+}
+
+.prayer-submit{
+  grid-column:1/-1;
+  width:fit-content;
+  margin-top:4px;
+  padding:0 0 10px;
+  border:0;
+  border-bottom:2px solid var(--red);
+  background:transparent;
+  color:#fff;
+  cursor:pointer;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+}
+
+.prayer-privacy{
+  max-width:900px;
+  margin:34px 0 0;
+  padding-top:24px;
+  border-top:1px solid #222;
+  color:#777;
+  font-size:13px;
+  line-height:1.6;
+}
+
+.prayer-return{
+  display:inline-block;
+  margin-top:38px;
+  color:#aaa;
+  text-decoration:none;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+@media (max-width:768px){
+  .vision{
+    padding-top:72px;
+    padding-bottom:78px;
+  }
+
+  .vision .section-label{
+    margin-bottom:52px;
+  }
+
+  .vision-layout{
+    gap:42px;
+  }
+
+  .vision-heading h2{
+    font-size:clamp(52px,14.2vw,68px);
+  }
+
+  .prayer-page-wrap{
+    min-height:100vh;
+    padding:68px 24px 60px;
+  }
+
+  .prayer-eyebrow{
+    margin-bottom:28px;
+  }
+
+  .prayer-page h1{
+    font-size:clamp(48px,13vw,64px);
+    line-height:.9;
+  }
+
+  .prayer-intro{
+    margin:34px 0 44px;
+    font-size:16px;
+  }
+
+  .prayer-form{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .prayer-field-full,
+  .prayer-submit{
+    grid-column:auto;
+  }
+
+  .prayer-field textarea{
+    min-height:145px;
+  }
+}
