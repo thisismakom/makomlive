@@ -2283,103 +2283,186 @@ header.nav{
 }
 
 
-/* =========================================
-   UNIFIED MAJOR SECTION HEADLINES
-   ========================================= */
+/* =========================================================
+   MAKOM — FINAL DISPLAY TYPOGRAPHY SYSTEM
+   ========================================================= */
 
-/* Desktop */
-.come-as-you-are h2,
-.vision-heading h2 {
-  font-size: clamp(4.5rem, 6.2vw, 7rem);
+/* ---------------------------------------------------------
+   DESKTOP — BASE DISPLAY SCALE
+   --------------------------------------------------------- */
+
+.heart-content h2,
+.come-heading h2,
+.vision-heading h2,
+.pillars-header h2,
+.statement-heading h2,
+.gathering-title,
+.connect-heading h2 {
+  margin-top: 0;
+  font-weight: 800;
   line-height: 0.88;
   letter-spacing: -0.055em;
-  margin: 0;
 }
 
-/* Keep italic/red words proportional */
-.come-as-you-are h2 em,
-.vision-heading h2 em {
-  font-size: 1em;
+
+/* LIFE IS LOUD. */
+.heart-content h2 {
+  font-size: clamp(72px, 6.2vw, 104px);
+}
+
+
+/* THERE IS ROOM FOR YOU. */
+.come-heading h2 {
+  font-size: clamp(72px, 6.2vw, 104px);
+}
+
+
+/* CREATING SPACE TO ENCOUNTER. */
+.vision-heading h2 {
+  font-size: clamp(72px, 6.2vw, 104px);
+}
+
+
+/* MAKE ROOM.
+   Two lines, so it can carry slightly more scale. */
+.pillars-header h2 {
+  font-size: clamp(76px, 6.6vw, 110px);
+}
+
+
+/* DRAW NEAR.
+   Also only two lines — slightly larger for visual balance. */
+.statement-heading h2 {
+  font-size: clamp(76px, 6.6vw, 110px);
+}
+
+
+/* GATHER IN HIS PRESENCE.
+   Keep controlled because the italic second line is long. */
+.gathering-title {
+  font-size: clamp(72px, 6.2vw, 104px);
+}
+
+
+/* DON'T MISS THE NEXT MAKOM.
+   Three lines, so use the standard scale. */
+.connect-heading h2 {
+  font-size: clamp(72px, 6.2vw, 104px);
+}
+
+
+/* ---------------------------------------------------------
+   EMPHASIS WORDS
+   --------------------------------------------------------- */
+
+.come-heading h2 em,
+.vision-heading h2 em,
+.pillars-header h2 em,
+.gathering-title em,
+.connect-heading h2 em {
+  font-size: 1em !important;
   line-height: inherit;
 }
 
-/* Mobile */
+
+/* DRAW / NEAR uses a span rather than em */
+.statement-heading h2 span {
+  font-size: 1em !important;
+  line-height: inherit;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 768px) {
-  .come-as-you-are h2,
+
+  .heart-content h2,
+  .come-heading h2,
+  .vision-heading h2,
+  .pillars-header h2,
+  .statement-heading h2,
+  .gathering-title,
+  .connect-heading h2 {
+    line-height: 0.91 !important;
+    letter-spacing: -0.05em !important;
+  }
+
+
+  /* LIFE IS LOUD. */
+  .heart-content h2 {
+    font-size: clamp(50px, 13vw, 62px) !important;
+  }
+
+
+  /* THERE IS ROOM FOR YOU. */
+  .come-heading h2 {
+    font-size: clamp(50px, 13vw, 62px) !important;
+  }
+
+
+  /* CREATING SPACE TO ENCOUNTER. */
   .vision-heading h2 {
-    font-size: clamp(3.4rem, 14vw, 5rem);
-    line-height: 0.9;
-    letter-spacing: -0.05em;
+    font-size: clamp(50px, 13vw, 62px) !important;
+  }
+
+
+  /* MAKE ROOM. */
+  .pillars-header h2 {
+    font-size: clamp(54px, 14vw, 66px) !important;
+  }
+
+
+  /* DRAW NEAR. */
+  .statement-heading h2 {
+    font-size: clamp(54px, 14vw, 66px) !important;
+  }
+
+
+  /* GATHER IN HIS PRESENCE. */
+  .gathering-title {
+    font-size: clamp(50px, 13vw, 62px) !important;
+  }
+
+
+  /* DON'T MISS THE NEXT MAKOM. */
+  .connect-heading h2 {
+    font-size: clamp(50px, 13vw, 62px) !important;
   }
 }
 
-/* =========================================
-   MAKOM — UNIFIED MAJOR HEADLINE SCALE
-   ========================================= */
+/* ========================================
+   THE EXPERIENCE — DIVIDER LINES
+   ======================================== */
 
-/* DESKTOP */
-.come-as-you-are h2,
-.vision-heading h2,
-.gathering-heading h2,
-.posture h2 {
-  font-size: clamp(4.5rem, 6.2vw, 7rem) !important;
-  line-height: 0.88 !important;
-  letter-spacing: -0.055em;
+.pillar-grid {
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
 }
 
-/* Italic/red emphasis stays exactly same scale */
-.come-as-you-are h2 em,
-.vision-heading h2 em,
-.gathering-heading h2 em,
-.posture h2 em {
-  font-size: 1em !important;
-  line-height: inherit;
+.pillar-grid article {
+  border-right: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.pillar-grid article:last-child {
+  border-right: none;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .come-as-you-are h2,
-  .vision-heading h2,
-  .gathering-heading h2,
-  .posture h2 {
-    font-size: clamp(3.4rem, 14vw, 5rem) !important;
-    line-height: 0.90 !important;
-    letter-spacing: -0.05em;
+
+  .pillar-grid {
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
   }
-}
 
-/* =========================================
-   MAKOM — UNIFIED MAJOR HEADLINE SCALE
-   ========================================= */
+  .pillar-grid article {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+  }
 
-.come-as-you-are h2,
-.vision-heading h2,
-.gathering-heading h2,
-.posture h2,
-.connect h2 {
-  font-size: clamp(4.5rem, 6.2vw, 7rem) !important;
-  line-height: 0.88 !important;
-  letter-spacing: -0.055em;
-}
-
-/* Emphasized / italic words */
-.come-as-you-are h2 em,
-.vision-heading h2 em,
-.gathering-heading h2 em,
-.posture h2 em,
-.connect h2 em {
-  font-size: 1em !important;
-  line-height: inherit;
-}
-
-@media (max-width: 768px) {
-  .come-as-you-are h2,
-  .vision-heading h2,
-  .gathering-heading h2,
-  .posture h2,
-  .connect h2 {
-    font-size: clamp(3.4rem, 14vw, 5rem) !important;
-    line-height: 0.90 !important;
-    letter-spacing: -0.05em;
+  .pillar-grid article:last-child {
+    border-bottom: none;
   }
 }
