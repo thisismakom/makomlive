@@ -2513,3 +2513,13 @@ header.nav{
 .nav-links a:hover {
   border-bottom: 1px solid #ed1c24 !important;
 }
+
+
+/* TEMP HEADER TEST */
+header.nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 99999 !important;
+}
