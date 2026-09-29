@@ -598,6 +598,38 @@ THE POSTURE
 document.addEventListener("DOMContentLoaded", function () {
 
     /* ========================================
+       FIXED HEADER SCROLL EFFECT
+       ======================================== */
+
+    const header = document.querySelector(".nav");
+
+    function updateHeader() {
+        if (!header) return;
+
+        if (window.scrollY > 40) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    }
+
+    updateHeader();
+
+    window.addEventListener("scroll", updateHeader, {
+        passive: true
+    });
+
+
+    /* ========================================
+       MOBILE MENU
+       ======================================== */
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    // ...your existing code continues
+
+    /* ========================================
        MOBILE MENU
     ======================================== */
 
