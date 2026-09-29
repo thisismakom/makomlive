@@ -65,7 +65,10 @@ input {
    ========================================================= */
 
 .nav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
 
   width: 100%;
@@ -84,6 +87,21 @@ input {
       rgba(5,5,5,.92) 70%,
       rgba(5,5,5,.72) 100%
     );
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+
+  box-sizing: border-box;
+}
+
+/* Header becomes solid when page scrolls */
+.nav.scrolled {
+  background: rgba(5,5,5,.96);
+  box-shadow: 0 1px 0 rgba(255,255,255,.08);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-logo {
@@ -138,7 +156,13 @@ input {
 .mobile-menu {
   display: none;
 }
-
+#heart,
+#vision,
+#gatherings,
+#next-gathering,
+#connect {
+  scroll-margin-top: 130px;
+}
 
 /* =========================================================
    SHARED SECTION SYSTEM
