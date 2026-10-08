@@ -2580,3 +2580,20 @@ header.nav {
   font-size: clamp(20px, 1.65vw, 27px);
   line-height: 1.25;
 }
+
+/* ========================================
+   NEXT MAKOM — REGISTRATION CTA
+   ======================================== */
+
+#next-gathering .gathering-register,
+#next-gathering .register-action {
+  color: #ef001b !important;
+  border-bottom: 1px solid #ef001b;
+  text-decoration: none;
+}
+
+#next-gathering .gathering-register:hover,
+#next-gathering .register-action:hover {
+  color: #ffffff !important;
+  border-bottom-color: #ffffff;
+}
