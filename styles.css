@@ -2597,3 +2597,37 @@ header.nav {
   color: #ffffff !important;
   border-bottom-color: #ffffff;
 }
+
+
+.gathering-directions {
+  display: block;
+  margin-top: 18px;
+
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.gathering-directions:hover {
+  color: #fff;
+}
+
+.gathering-register {
+  display: inline-block;
+  margin-top: 12px;
+  padding-bottom: 5px;
+
+  color: var(--red) !important;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .18em;
+
+  border-bottom: 1px solid var(--red);
+}
